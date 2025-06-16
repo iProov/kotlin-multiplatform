@@ -90,7 +90,7 @@ publishing {
             pom {
                 name.set("iProov KMP")
                 description.set("A KMP wrapper for the native iProov SDK.")
-                url.set("https://github.com/iProov/kotlin-multiplatform-sdk")  // kmp wrapper repo url
+                url.set("https://github.com/iProov/kotlin-multiplatform")  // kmp wrapper repo url
             }
         }
     }
