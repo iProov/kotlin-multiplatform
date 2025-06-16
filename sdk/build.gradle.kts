@@ -17,10 +17,7 @@ kotlin {
         publishAllLibraryVariants()
     }
 
-    listOf(
-        iosArm64(),
-        iosSimulatorArm64()
-    ).forEach { iosTarget ->
+    listOf(iosArm64()).forEach { iosTarget ->
 
         iosTarget.compilations.getByName("main") {
             val iproov by cinterops.creating {

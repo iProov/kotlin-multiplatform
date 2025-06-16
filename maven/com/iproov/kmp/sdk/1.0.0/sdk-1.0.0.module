@@ -29,59 +29,17 @@
           "version": {
             "requires": "2.1.21"
           }
-        },
-        {
-          "group": "org.jetbrains.compose.foundation",
-          "module": "foundation",
-          "version": {
-            "requires": "1.6.11"
-          }
-        },
-        {
-          "group": "org.jetbrains.compose.material3",
-          "module": "material3",
-          "version": {
-            "requires": "1.6.11"
-          }
-        },
-        {
-          "group": "io.ktor",
-          "module": "ktor-client-core",
-          "version": {
-            "requires": "2.3.12"
-          }
-        },
-        {
-          "group": "io.ktor",
-          "module": "ktor-client-content-negotiation",
-          "version": {
-            "requires": "2.3.12"
-          }
-        },
-        {
-          "group": "io.ktor",
-          "module": "ktor-serialization-kotlinx-json",
-          "version": {
-            "requires": "2.3.12"
-          }
-        },
-        {
-          "group": "io.ktor",
-          "module": "ktor-client-darwin",
-          "version": {
-            "requires": "2.3.12"
-          }
         }
       ],
       "files": [
         {
           "name": "sdk-metadata-1.0.0.jar",
           "url": "sdk-1.0.0.jar",
-          "size": 9448,
-          "sha512": "4e38f049e82b4f4a6fb58bf31def95119e7942d41400975e015c85e736106371a7a1ae5eb6afc164f973045a0d40216ed0273058fa71c4fc504f5d496294aaee",
-          "sha256": "40b25653238a0f1bed001ed5019b0eaa97bebf9cd5946a46c0854d7848624005",
-          "sha1": "d93e55039a2d49415bb6e4edf03600670a8288e1",
-          "md5": "f52601db741429224852584d8a2f0e99"
+          "size": 9310,
+          "sha512": "472dfbcc67adf20901545d5b711314b224c9eb56d357b8e281724fdedf079213bb8a514c1a283315f720ef6c4b5f941fa6883de71ff5a48a6ca0acd7a8414aaf",
+          "sha256": "5ec02aa10e0e637562785d000ee085a719959a767f9c6f716209ba764c0eccc4",
+          "sha1": "1d5c8207d98f4dd17bfe3b3ce7c32f574cb862b7",
+          "md5": "8efd7da4114f919f6ad39936950ef2f1"
         }
       ]
     },
@@ -99,11 +57,11 @@
         {
           "name": "sdk-kotlin-1.0.0-sources.jar",
           "url": "sdk-1.0.0-sources.jar",
-          "size": 10158,
-          "sha512": "2d5f9880fcff721cedc07af3e6d6e5563b523e2a80e6c1c8ea66c2baa54ccbe213711012a6c8992489aae60e6cd10e1d473b7779093f15cc62e544b9b363e2f1",
-          "sha256": "fc93a4a9d96779750b4e2f21793db8bd8507691d593e3e5c9c9e50069a65e562",
-          "sha1": "da893fb9270f950cf193f97467c06452f80db50d",
-          "md5": "1e485909e05e065050cece73a7cf1435"
+          "size": 6550,
+          "sha512": "7ef2284bb411f106abaf77c4de7ce4c03fdb36cd241ef6a233cc5c1a93e8ddd82a252301737527893df331896571814e795cc5cf6c22d6ce4c9c6a3d4d1779e3",
+          "sha256": "f4a798592294caa389d7620bfe61041c2d398d020ebbb7834705592a0e24cdad",
+          "sha1": "7ae0c8789fbff567e28f683a1dd9190fc36a32b1",
+          "md5": "9c4447dae147bd8a710c42b03e7c1f23"
         }
       ]
     },
@@ -273,76 +231,6 @@
         "url": "../../sdk-iosarm64/1.0.0/sdk-iosarm64-1.0.0.module",
         "group": "com.iproov.kmp",
         "module": "sdk-iosarm64",
-        "version": "1.0.0"
-      }
-    },
-    {
-      "name": "iosSimulatorArm64ApiElements-published",
-      "attributes": {
-        "artifactType": "org.jetbrains.kotlin.klib",
-        "org.gradle.category": "library",
-        "org.gradle.jvm.environment": "non-jvm",
-        "org.gradle.usage": "kotlin-api",
-        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
-        "org.jetbrains.kotlin.platform.type": "native"
-      },
-      "available-at": {
-        "url": "../../sdk-iossimulatorarm64/1.0.0/sdk-iossimulatorarm64-1.0.0.module",
-        "group": "com.iproov.kmp",
-        "module": "sdk-iossimulatorarm64",
-        "version": "1.0.0"
-      }
-    },
-    {
-      "name": "iosSimulatorArm64SourcesElements-published",
-      "attributes": {
-        "org.gradle.category": "documentation",
-        "org.gradle.dependency.bundling": "external",
-        "org.gradle.docstype": "sources",
-        "org.gradle.jvm.environment": "non-jvm",
-        "org.gradle.usage": "kotlin-runtime",
-        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
-        "org.jetbrains.kotlin.platform.type": "native"
-      },
-      "available-at": {
-        "url": "../../sdk-iossimulatorarm64/1.0.0/sdk-iossimulatorarm64-1.0.0.module",
-        "group": "com.iproov.kmp",
-        "module": "sdk-iossimulatorarm64",
-        "version": "1.0.0"
-      }
-    },
-    {
-      "name": "iosSimulatorArm64ResourcesElements-published",
-      "attributes": {
-        "org.gradle.category": "library",
-        "org.gradle.dependency.bundling": "external",
-        "org.gradle.jvm.environment": "non-jvm",
-        "org.gradle.libraryelements": "kotlin-multiplatformresources",
-        "org.gradle.usage": "kotlin-multiplatformresources",
-        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
-        "org.jetbrains.kotlin.platform.type": "native"
-      },
-      "available-at": {
-        "url": "../../sdk-iossimulatorarm64/1.0.0/sdk-iossimulatorarm64-1.0.0.module",
-        "group": "com.iproov.kmp",
-        "module": "sdk-iossimulatorarm64",
-        "version": "1.0.0"
-      }
-    },
-    {
-      "name": "iosSimulatorArm64MetadataElements-published",
-      "attributes": {
-        "artifactType": "org.jetbrains.kotlin.klib",
-        "org.gradle.category": "library",
-        "org.gradle.jvm.environment": "non-jvm",
-        "org.gradle.usage": "kotlin-metadata",
-        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
-        "org.jetbrains.kotlin.platform.type": "native"
-      },
-      "available-at": {
-        "url": "../../sdk-iossimulatorarm64/1.0.0/sdk-iossimulatorarm64-1.0.0.module",
-        "group": "com.iproov.kmp",
-        "module": "sdk-iossimulatorarm64",
         "version": "1.0.0"
       }
     }
