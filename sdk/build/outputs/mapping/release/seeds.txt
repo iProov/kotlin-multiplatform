@@ -1,4 +1,0 @@
-com.iproov.kmp.AppContextInitializer
-com.iproov.kmp.R
-com.iproov.kmp.R: R()
-com.iproov.kmp.AppContextInitializer: AppContextInitializer()

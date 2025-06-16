@@ -1,1494 +1,0 @@
-
-ˆT
-com
-iproov
-sdk
-IPRSSwizzleMeta
-platform
-darwin
-NSObjectMeta
-kotlinx
-cinterop
-CPointer
-cnames
-structs
-_NSZone
-zone
-IPRSSwizzle
-kotlin
-
-commonizer
-ObjCCallable
-
-ObjCMethod
-encoding
-@24@0:8^{_NSZone=}16
-selector
-allocWithZone:
-isStret
-
-Deprecated
-message
-)Use constructor or factory method instead
-allocWithZone
-CPointed
-COpaquePointer
-	ObjCClass
-inClass
-	Function1
-IPRSSwizzleInfo
-Any
-IPRSSwizzleImpFactoryBlock
-newImpFactory
-Unit
-v40@0:8:16#24@?32
-)swizzleClassMethod:inClass:newImpFactory:
-swizzleClassMethod
-@16@0:8
-new
-alloc
-ULong
-IPRSSwizzleMode
-mode
-key
-Boolean
-B56@0:8:16#24@?32Q40r^v48
-5swizzleInstanceMethod:inClass:newImpFactory:mode:key:
-swizzleInstanceMethod
-ExternalObjCClass
-ExperimentalForeignApi
-
-IProovMeta
-IProov
-&IProovPresentationDelegateProtocolMeta
-IPNaturalFilterMeta
-IPFilterProtocolMeta
-IPNaturalFilter
-IPTSKPinFailureReportMeta
-IPTSKPinFailureReport
-WKWebExtension
-	Companion
-WKWebExtensionMeta
-ObjCClassOf
-NSObject
-ObjCConstructor
-initSelector
-init
-
-designated
-String
-displayName
-version
-displayVersion
-Double
-manifestVersion
-
-B24@0:8d16
-supportsManifestVersion:
-supportsManifestVersion
-collections
-Set
-allRequestedMatchPatterns
-CValue
-CoreGraphics
-CGSize
-size
-UIKit
-UIImage
-@32@0:8{CGSize=dd}16
-iconForSize:
-iconForSize
-List
-errors
-actionIconForSize:
-actionIconForSize
-B16@0:8
-hasContentModificationRules
-hasOptionsPage
-requestedPermissions
-hasOverrideNewTabPage
- requestedPermissionMatchPatterns
-displayActionLabel
-
-Foundation
-NSLocale
-defaultLocale
-optionalPermissionMatchPatterns
-hasPersistentBackgroundContent
-hasCommands
-level
-DeprecationLevel
-ERROR
-Use constructor instead
-replaceWith
-ReplaceWith
-imports
-
-expression
-WKWebExtension()
-internal
-CCall
-ConsumesReceiver
-ReturnsRetained
-d16@0:8
-hasInjectedContent
-displayDescription
-Map
-manifest
-displayShortName
-optionalPermissions
-hasBackgroundContent
-(WKWebExtensionControllerDelegateProtocol
-NSObjectProtocol
-WKWebExtensionController
-
-controller
-WKWebExtensionMessagePort
-connectUsingMessagePort
-WKWebExtensionContext
-forExtensionContext
-NSError
-completionHandler
-v48@0:8@16@24@32@?40
-UwebExtensionController:connectUsingMessagePort:forExtensionContext:completionHandler:
-webExtensionController
-openWindowsForExtensionContext
-@32@0:8@16@24
-6webExtensionController:openWindowsForExtensionContext:
-WKWebExtensionAction
-didUpdateAction
-v40@0:8@16@24@32
-;webExtensionController:didUpdateAction:forExtensionContext:
-promptForPermissions
-WKWebExtensionTabProtocol
-inTab
-	Function2
-NSDate
-v56@0:8@16@24@32@40@?48
-XwebExtensionController:promptForPermissions:inTab:forExtensionContext:completionHandler:
-presentPopupForAction
-SwebExtensionController:presentPopupForAction:forExtensionContext:completionHandler:
-"openOptionsPageForExtensionContext
-v40@0:8@16@24@?32
-LwebExtensionController:openOptionsPageForExtensionContext:completionHandler:
- focusedWindowForExtensionContext
-WKWebExtensionWindowProtocol
-8webExtensionController:focusedWindowForExtensionContext:
-sendMessage
-toApplicationWithIdentifier
-replyHandler
-`webExtensionController:sendMessage:toApplicationWithIdentifier:forExtensionContext:replyHandler:
-!WKWebExtensionWindowConfiguration
-openNewWindowUsingConfiguration
-]webExtensionController:openNewWindowUsingConfiguration:forExtensionContext:completionHandler:
-promptForPermissionToAccessURLs
-cwebExtensionController:promptForPermissionToAccessURLs:inTab:forExtensionContext:completionHandler:
-WKWebExtensionTabConfiguration
-openNewTabUsingConfiguration
-ZwebExtensionController:openNewTabUsingConfiguration:forExtensionContext:completionHandler:
- promptForPermissionMatchPatterns
-dwebExtensionController:promptForPermissionMatchPatterns:inTab:forExtensionContext:completionHandler:
-IPTrustKitMeta
-trustKitConfig
-
-v24@0:8@16
-$initSharedInstanceWithConfiguration:
-#initSharedInstanceWithConfiguration
-
-IPTrustKit
-block
-v24@0:8@?16
-setLoggerBlock:
-setLoggerBlock
-sharedContainerIdentifier
-v32@0:8@16@24
->initSharedInstanceWithConfiguration:sharedContainerIdentifier:
-sharedInstance
-IPRSSwizzleInfoMeta
-TrieNode
-
-CStructVar
-Type
-(Use sizeOf<T>() or alignOf<T>() instead.
-native
-	NativePtr
-rawPtr
-UInt
-string_table_offset
-num_children
-first_child_offset
-is_terminal
-IPTSKSPKIHashCacheMeta
-IPTSKSPKIHashCache
-IPLivenessAssuranceOptions
-IPLivenessAssuranceOptionsMeta
-IPLivenessAssuranceOptions()
-UIColor
-ovalStrokeColor
-completedOvalStrokeColor
-setCompletedOvalStrokeColor:
-setCompletedOvalStrokeColor
-setOvalStrokeColor:
-setOvalStrokeColor
-IPLineDrawingFilterMeta
-IPLineDrawingFilter
-WKWebExtensionActionMeta
-WebKit
-	WKWebView
-popupWebView
-hasUnreadBadgeText
-	badgeText
-webExtensionContext
-WKWebExtensionAction()
-	menuItems
-inspectionName
-setInspectionName:
-setInspectionName
-	isEnabled
-presentsPopup
-UIViewController
-popupViewController
-
-v20@0:8B16
-setHasUnreadBadgeText:
-setHasUnreadBadgeText
-associatedTab
-v16@0:8
-
-closePopup
-label
-IPTSKPinningValidatorMeta
-IPTSKPinningValidator
-IPSessionMeta
-	IPSession
-IPTSKNSURLSessionDelegateProxy
-"IPTSKNSURLSessionDelegateProxyMeta
-trustKit
-NSURLSessionDelegateProtocol
-sessionDelegate
-!initWithTrustKit:sessionDelegate:
-9IPTSKNSURLSessionDelegateProxy(trustKit, sessionDelegate)
-initWithTrustKit
- IPTSKNSURLSessionDelegateProxy()
-NSURLSession
-session
-NSURLSessionTask
-task
-NSURLAuthenticationChallenge
-didReceiveChallenge
-Long
-NSURLCredential
-"TSKURLSessionAuthChallengeCallback
-6URLSession:task:didReceiveChallenge:completionHandler:
-
-URLSession
-1URLSession:didReceiveChallenge:completionHandler:
-sel
-
-@24@0:8:16
-forwardingTargetForSelector:
-forwardingTargetForSelector
-IPTSKPinningValidatorResultMeta
-IPTSKPinningValidatorResult
-WKWebExtensionDataRecord
-WKWebExtensionDataRecordMeta
-WKWebExtensionDataRecord()
-uniqueIdentifier
-containedDataTypes
-
-NSUInteger
-Q16@0:8
-totalSizeInBytes
-	dataTypes
-
-Q24@0:8@16
-sizeInBytesOfTypes:
-sizeInBytesOfTypes
-	IPKeyPair
-IPKeyPairMeta
-IPKeyPair()
-IPPublicKey
-	publicKey
-isInSecureEnclave
-NSData
-data
-
-@24@0:8@16
-signWithData:
-signWithData
-IPTSKBackgroundReporterMeta
-$NSURLSessionTaskDelegateProtocolMeta
-IPTSKBackgroundReporter
-IPTSKReportsRateLimiterMeta
-IPTSKReportsRateLimiter
-
-identifier
-initWithIdentifier:
-IPTSKSPKIHashCache()
-__SecCertificate
-Security
-SecCertificateRef
-certificate
-@24@0:8^{__SecCertificate=}16
-(hashSubjectPublicKeyInfoFromCertificate:
-'hashSubjectPublicKeyInfoFromCertificate
-$IPTSKSPKIHashCache(uniqueIdentifier)
-initWithIdentifier
-IPErrorCode
-IPErrorCodeMeta
-IPErrorCode()
-,WKWebExtensionControllerDelegateProtocolMeta
-NSObjectProtocolMeta
-WKWebExtensionMatchPattern
-WKWebExtensionMatchPatternMeta
-NSSecureCodingProtocol
-NSCopyingProtocol
-NSCoder
-coder
-initWithCoder:
-scheme
-host
-path
-ObjCObjectVar
-error
-initWithScheme:host:path:error:
-string
-initWithString:error:
-NSZone
-copyWithZone:
-copyWithZone
-matchesAllURLs
-@48@0:8@16@24@32^@40
-5WKWebExtensionMatchPattern(scheme, host, path, error)
-initWithScheme
-WKWebExtensionMatchPattern()
-matchesAllHosts
-@32@0:8@16^@24
-)WKWebExtensionMatchPattern(string, error)
-initWithString
-encodeWithCoder:
-encodeWithCoder
-!WKWebExtensionMatchPattern(coder)
-initWithCoder
-NSURL
-url
-
-B24@0:8@16
-matchesURL:
-
-matchesURL
-!WKWebExtensionMatchPatternOptions
-options
-B32@0:8@16Q24
-matchesURL:options:
-pattern
-matchesPattern:options:
-matchesPattern
-matchesPattern:
-IPFilterProtocol
-IPLineDrawingFilterStyle
-style
-foregroundColor
-backgroundColor
-.initWithStyle:foregroundColor:backgroundColor:
-setForegroundColor:
-setForegroundColor
-IPLineDrawingFilter()
-setBackgroundColor:
-setBackgroundColor
-q16@0:8
-
-v24@0:8q16
-	setStyle:
-setStyle
-@40@0:8q16@24@32
-<IPLineDrawingFilter(style, foregroundColor, backgroundColor)
-initWithStyle
-%WKWebExtensionControllerConfiguration
-)WKWebExtensionControllerConfigurationMeta
-WKWebsiteDataStore
-defaultWebsiteDataStore
-setDefaultWebsiteDataStore:
-setDefaultWebsiteDataStore
-WKWebViewConfiguration
-webViewConfiguration
-setWebViewConfiguration:
-setWebViewConfiguration
-'WKWebExtensionControllerConfiguration()
-,WKWebExtensionControllerConfiguration(coder)
-NSUUID
-isPersistent
-WKWebExtensionContextMeta
-	extension
-contextForExtension:
-contextForExtension
-IPFailureResult
-IPFailureResultMeta
-frame
-IPFailureReason
-reason
-IPFailureResult()
-localizedDescription
- NSURLSessionTaskDelegateProtocol
-andRateLimitReports
-2initAndRateLimitReports:sharedContainerIdentifier:
-	objcnames
-classes
-Protocol
-	aProtocol
-conformsToProtocol:
-conformsToProtocol
-didCompleteWithError
-%URLSession:task:didCompleteWithError:
-	aSelector
-performSelector:
-performSelector
-IPTSKBackgroundReporter()
-#16@0:8
-class
-debugDescription
-
-superclass
-aClass
-
-B24@0:8#16
-isKindOfClass:
-isKindOfClass
-isMemberOfClass:
-isMemberOfClass
-isProxy
-serverHostname
-NSNumber
-port
-certificateChain
-notedHostname
-
-reportURIs
-includeSubdomains
-enforcePinning
-	knownPins
-TSKTrustEvaluationResult
-validationResult
-expirationDate
-%v88@0:8@16@24@32@40@48B56B60@64q72@80
-ôpinValidationFailedForHostname:port:certificateChain:notedHostname:reportURIs:includeSubdomains:enforcePinning:knownPins:validationResult:expirationDate:
-pinValidationFailedForHostname
-object
-isEqual:
-isEqual
-description
-
-withObject
-@32@0:8:16@24
-performSelector:withObject:
-hash
-_withObject
-@40@0:8:16@24@32
-&performSelector:withObject:withObject:
-
-B24@0:8:16
-respondsToSelector:
-respondsToSelector
-shouldRateLimitReports
-@28@0:8B16@20
-JIPTSKBackgroundReporter(shouldRateLimitReports, sharedContainerIdentifier)
-initAndRateLimitReports
-IPOptionsMeta
-	IPOptions
-
-dictionary
-fromDictionary:
-fromDictionary
-
-ObjCObject
-!IPGenuinePresenceAssuranceOptions
-%IPGenuinePresenceAssuranceOptionsMeta
-scanningPrompts
-setScanningPrompts:
-setScanningPrompts
-#IPGenuinePresenceAssuranceOptions()
-controlYPosition
-readyOvalStrokeColor
-setReadyOvalStrokeColor:
-setReadyOvalStrokeColor
-notReadyOvalStrokeColor
-setNotReadyOvalStrokeColor:
-setNotReadyOvalStrokeColor
-setControlYPosition:
-setControlYPosition
-IProovViewDelegateProtocol
-willPresentIProovView
-didDismissIProovView
-didPresentIProovView
-WKWebExtensionMessagePortMeta
-WKWebExtensionWindowState
-	NSInteger
-value
-Will be removed.
-byValue
-"WKWebExtensionWindowStateMaximized
-"WKWebExtensionWindowStateMinimized
-WKWebExtensionWindowStateNormal
-Var
-CPrimitiveVar
-CEnumVar
-#WKWebExtensionWindowStateFullscreen
-Enum
-CEnum
-"WKWebExtensionTabConfigurationMeta
-NSSecureCodingProtocolMeta
-NSCopyingProtocolMeta
-allHostsAndSchemesMatchPattern
-	urlScheme
-registerCustomURLScheme:
-registerCustomURLScheme
-matchPatternWithString:
-matchPatternWithString
-supportsSecureCoding
-@40@0:8@16@24@32
-!matchPatternWithScheme:host:path:
-matchPatternWithScheme
-allURLsMatchPattern˝
- 
- 
-
- 
-
-
- 
-
-
-	 
-
-
-
-
- 
- 
-
-
- 
- 
- 
- 
- 
- 
-  
-! 
-" 
-# 
-% 
-, 
-- 
-0 
-4 
-5 
-6 
-7 
-8 
-9 
-: 
-; 
-< 
-= 
-> 
-(? 
-@ 
-A 
-B 
-C 
-G 
-K 
-P
-0Q 
-S 
-T
-3U 
-W
-5X 
-0\ 
-g
-8h 
-n 
-r 
-v
-<w 
-=x 
-=y 
-0} 
-Ç 
-É 
-Ñ 
-Ü 
-à 
-8ä 
-í 
-ó 
-ô 
-8ö 
-£ 
-© 
-Æ 
-≥ 
-∏ 
-¡ 
-¬ 
-Q? 
-√ 
-Sƒ 
-∆
-Uv
-V« 
-« 
-… 
-Œ 
-œ 
-– 
-\? 
-— 
-5” 
-⁄ 
-€ 
-G? 
-‹ 
-›
-dﬁ 
-5Í 
-Û 
-Ù 
-ı 
-ˆ 
-˜ 
-k? 
-¯ 
-8˙ 
-8Ä 
-8Ç 
-8Ñ 
-Ü 
-8á 
-à 
-ê 
-ë 
-í 
-w? 
-ì 
-ó 
-û 
-{? 
-ü 
-° 
-8§ 
-© 
-8™ 
-´ 
-¨ 
-≠ 
-[? 
-± 
-≤
-á≥ 
-∫ 
-â? 
-ª 
-Ω 
-æ 
-ø 
-é? 
-¿ 
-8¡ 
-8¬ 
-8√ 
-… 
-8Œ 
-8ﬁ 
-„ 
-a? 
-Î 
-Ï 
-˝ 
-õ? 
-˛ 
-dˇ 
-dÉ 
-8â 
-ã 
-è 
-¢? 
-ê 
-í 
-Ç? 
-8ñ 
-ô
-®ö
-©õ 
-8± 
-π 
-— 
-“ 
-÷ 
-◊ 
-∞? 
-ÿ 
-Ê 
-Í 
-Î 
-µ? 
-Ï 
-µ 
-µÒ 
-µÚ 
-µÛ 
-ª? 
-Ù 
-Ωƒ 
-ı 
-µˆ 
-˜ 
-¯ 
-˘ 
-8˙ 
-8˚ "¯ó 20BJS02
-00	HóÄ“
-“
- (( “
-(Jt(0200	j`202$000j`HóÄ“
-“
- (&(' J4*0HóÄ“
-“
- ()(* JC+0HóÄ“
-“
- ()(+ “
-(Jò30200	j`202$000j`2
-.0j`2/00	j`HóÄ“
-“
- (1(2 “
-“
-"Áó  20BJS0!2
-00	HóÄ“
-“
- (( “
-(J4*0!HóÄ“
-“
- ()(* JC+0!HóÄ“
-“
- ()(+ “
-(“
-“
-"Á "20“
-"Îó #2020$BJS0%2
-00	HóÄ“
-“
- (( “
-(J4*0%HóÄ“
-“
- ()(* JC+0%HóÄ“
-“
- ()(+ “
-(“
-“
-"Áó &20BJS0'2
-00	HóÄ“
-“
- (( “
-(J4*0'HóÄ“
-“
- ()(* JC+0'HóÄ“
-“
- ()(+ “
-(“
-“
-"Ü#)20*20(0+"•ó ( ?20,:?B “
-“
--D(EFJ4H0.HóÄ“
-“
- ()(H J4I0.HóÄ“
-“
- ()(I J4J0.HóÄ“
-“
- ()(J J:O02L0/HóÄ“
-“
- (M(N J6R01HóÄ“
-“
- ()(R JB[062V0402HóÄ“
-“
- (Y(Z J6]07HóÄ“
-“
- ()(] JB_062V0402HóÄ“
-“
- (Y(^ J2a0HóÄ“
-“
- (`(a J2b0HóÄ“
-“
- (`(b J6c01HóÄ“
-“
- ()(c J2d0HóÄ“
-“
- (`(d J6e01HóÄ“
-“
- ()(e J4f0.HóÄ“
-“
- ()(f J4i09HóÄ“
-“
- ()(i J6j01HóÄ“
-“
- ()(j J2k0HóÄ“
-“
- (`(k J2l0HóÄ“
-“
- (`(l JwE0(HóÄ“
-“
- ()(E “
-6
-m
-0:8o(pqB;st(u“
->“
-?J2L0/HóÄ“
-“
- (z(L J2{0HóÄ“
-“
- (`({ J4|0.HóÄ“
-“
- ()(| J>~00@HóÄ“
-“
- ()(~ J40.HóÄ“
-“
- ()( J8Ä01HóÄ“
-“
-!()	(Ä J4Å0HóÄ“
-“
-!(`	(Å “
-“
-"ó
-Á A20BJgé02Ö0C2á0D2â0E2ã0F00HóÄ“
-“
-"	(å	(ç JKé072Ö0C2è0EHóÄ“
-“
-"	(ê	(ë JPé02Ö0C2ì0G2â0EHóÄ“
-“
-"	(î	(ï JÇé02Ö0C2ñ012	ò0H2â0E2!ã
-010J00IHóÄ“
-“
-"	(õ	(ú Jgé02Ö0C2ù0G2â0E2ã0F00HóÄ“
-“
-"	(å	(û J^é02Ö0C2ü0E2ã0F00HóÄ“
-“
-"	(†	(° JIé0K2Ö0C2¢0EHóÄ“
-“
-"	(ê	(§ Jzé02Ö0C2•02	¶0.2â0E2ß00F00IHóÄ“
-“
-"	(õ	(® Joé02Ö0C2™0L2â0E2ã0K0F00IHóÄ“
-“
-"	(å	(´ JÇé02Ö0C2¨012	ò0H2â0E2!ã
-010J00IHóÄ“
-“
-"	(õ	(≠ Joé02Ö0C2Ø0M2â0E2ã0H0F00IHóÄ“
-“
-"	(å	(∞ JÇé02Ö0C2±012	ò0H2â0E2!ã
-010J00IHóÄ“
-“
-"	(õ	(≤ “
-"éó N20BJJ∑02¥00@HóÄ“
-“
-"	(µ	(∂ JS0O2
-00	HóÄ“
-“
- (( “
-(J4*0OHóÄ“
-“
- ()(* JLº02π0.00HóÄ“
-“
-"	(∫	(ª JU∑02¥00@2	Ω0.HóÄ“
-“
-"	(æ	(ø JC+0OHóÄ“
-“
- ()(+ “
-(J4¿0OHóÄ“
-“
-!()	(¿ “
-“
-"Áó P20BJS02
-00	HóÄ“
-“
- (( “
-(J4*0HóÄ“
-“
- ()(* JC+0HóÄ“
-“
- ()(+ “
-(“
-“
-"Á $20“
-"á#R20T“
-	(≈"fá Q ?20S:?B»0Wj`XR 0Y8@XÜéRÀ0Y8@XÜéRÃ0Y8@XÜéRÕ0Y8@XÜé“
-"Áó Z20BJS0[2
-00	HóÄ“
-“
- (( “
-(J4*0[HóÄ“
-“
- ()(* JC+0[HóÄ“
-“
- ()(+ “
-(“
-“
-"Ü#]20^20\0+"ûó \ ?20,:?B “
-“
--D(EFJvE0\HóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(““
->“
-?J4‘0_HóÄ“
-“
-!()	(‘ J>◊02’0_HóÄ“
-“
-"	(µ	(÷ J4’0_HóÄ“
-“
-!()	(’ J>Ÿ02‘0_HóÄ“
-“
-"	(µ	(ÿ “
-“
-"Îó `2020$BJS0a2
-00	HóÄ“
-“
- (( “
-(J4*0aHóÄ“
-“
- ()(* JC+0aHóÄ“
-“
- ()(+ “
-(“
-“
-"Ü#b20c20G0+"ëó G ?20,:?B “
-“
--D(EFJ6ﬂ0eHóÄ“
-“
-!()	(ﬂ J4‡0HóÄ“
-“
-!(`	(‡ J4·0.HóÄ“
-“
-!()	(· J6‚0EHóÄ“
-“
-!()	(‚ JxE0GHóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(„“
->“
-?J8‰07HóÄ“
-“
-!()	(‰ J@Á02	Â0.HóÄ“
-“
-"	(µ	(Ê J4Ë0HóÄ“
-“
-!(`	(Ë J4È0HóÄ“
-“
-!(`	(È JB[062V0402HóÄ“
-“
- (Y(Z J6Î0fHóÄ“
-“
-!()	(Î J>Ó02‡0HóÄ“
-“
-"	(Ï	(Ì J6Ô0HHóÄ“
-“
-!()	(Ô J5Ò0HóÄ“
-“
-"	(	(Ò J4Ú0.HóÄ“
-“
-!()	(Ú J6Â0.HóÄ“
-“
-!()	(Â “
-“
-"Áó g20BJS0h2
-00	HóÄ“
-“
- (( “
-(J4*0hHóÄ“
-“
- ()(* JC+0hHóÄ“
-“
- ()(+ “
-(“
-“
-"Áó i20BJS0j2
-00	HóÄ“
-“
- (( “
-(J4*0jHóÄ“
-“
- ()(* JC+0jHóÄ“
-“
- ()(+ “
-(“
-“
-"Ü#l20m20k0+"Æó k ?20,:?B “
-“
--D(EF B3˘0O˚0n“
-“
--	D(¸FJç˛0k2˘0O2˚0nHóÄ“
-“
-"	(ê	(¸ “
-7
-m
-0:8o(pqB;s	t(˝“
->“
-?JxE0kHóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(ˇ“
->“
-?Juä02Å0o2É0p2Ö0q2#ã0r0s00Ij`tHóÄ“
-“
-"	(å	(â Jlä02Å0o2Ö0q2#ã0r0s00Ij`tHóÄ“
-“
-"	(†	(ã JNè02å00	j`HóÄ“
-“
-"	(ç	(é “
-“
-"Áó u20BJS0v2
-00	HóÄ“
-“
- (( “
-(J4*0vHóÄ“
-“
- ()(* JC+0vHóÄ“
-“
- ()(+ “
-(“
-“
-"Ü#x20y20w0+"ìó w ?20,:?B “
-“
--D(EFJ2H0.HóÄ“
-“
- ()(H JxE0wHóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(î“
->“
-?J4ï0.HóÄ“
-“
-!()	(ï J8ñ01HóÄ“
-“
-!()	(ñ J9ô0j`zHóÄ“
-“
-"	(ò	(ô J6]07HóÄ“
-“
- ()(] JFù0j`z2ö01HóÄ“
-“
-"	(õ	(ú “
-“
-"Ü#|20}20{0+"‡ó { ?20,:?B “
-“
--D(EFJxE0{HóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(†“
->“
-?J4¢0~HóÄ“
-“
-!()	(¢ J4£0HóÄ“
-“
-!(`	(£ J>®02•0HóÄ“
-“
-"	(¶	(ß “
-“
-"ó Ä2020ÅBJT0Ç2
-00	HóÄ“
-“
- (( “
-(J5*0ÇHóÄ“
-“
- ()(* JD+0ÇHóÄ“
-“
- ()(+ “
-(“
-“
-"Îó É20BJT0Ñ2
-00	HóÄ“
-“
- (( “
-(J5*0ÑHóÄ“
-“
- ()(* JD+0ÑHóÄ“
-“
- ()(+ “
-(“
-“
-"Ü#Ö20Z20[0+"πó [ ?20,:?B “
-“
--D(EF B*Æ0.“
-“
--	D(ØFJxE0[HóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(∞“
->“
-?JP∑02¥0Ü0	j`àHóÄ“
-“
-"	(µ	(∂ JÑπ0[2ï0.HóÄ“
-“
-"	(¶	(Ø “
-7
-m
-0:8o(pqB;s	t(∏“
->“
-?“
-“
-"Ü#ä20ã2	0â0+"¥ó â ?20,:?B “
-“
--D(EFJwE0âHóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(º“
->“
-?“
-“
-"Á å20ç“
-"Ü#è20ê2	0é0+"Ìó é ?20,20ë20í:?B+ƒ0ì“
-“
--	D(≈FB “
-“
--D(EF BV∆0.«0.»0. 0F0î0	“
-“
--	D(ÀFBDÃ0. 0F0î0	“
-“
--	D(ÕFJ4Ã0.HóÄ“
-“
-!()	(Ã JN–02	0j`ï0	HóÄ“
-“
-!(	(œ “
-?J4—0HóÄ“
-“
-!(`	(— J±‘0é2∆0.2«0.2»0.2 0F0î0	HóÄ“
-“
-"	(“	(À “
-7
-m
-0:8o(pqB;s	t(”“
->“
-?J6«0.HóÄ“
-“
-!()	(« JyE0éHóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(’“
->“
-?J4÷0HóÄ“
-“
-!(`	(÷ J6∆0.HóÄ“
-“
-!()	(∆ JüŸ0é2Ã0.2 0F0î0	HóÄ“
-“
-"	(◊	(Õ “
-7
-m
-0:8o(pqB;s	t(ÿ“
->“
-?J?€02ƒ0ìHóÄ“
-“
-"	(µ	(⁄ JÜ›0é2ƒ0ìHóÄ“
-“
-"	(¶	(≈ “
-7
-m
-0:8o(pqB;s	t(‹“
->“
-?JA‚02
-ﬂ0ñHóÄ“
-“
-"	(‡	(· JO‚02
-ﬂ0ñ2‰0j`óHóÄ“
-“
-"	(Â	(Ê JOÈ02
-Á0é2‰0j`óHóÄ“
-“
-"	(Â	(Ë JAÈ02
-Á0éHóÄ“
-“
-"	(‡	(Í J6»0.HóÄ“
-“
-!()	(» “
-“
-"Ü#ò20`20a0+"Öó a ?20,20ô:?B “
-“
--D(EF BAÌ0rj`öÓ0_Ô0_“
-“
--	D(FJ>Ú02Ó0_HóÄ“
-“
-"	(µ	(Ò JxE0aHóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(Û“
->“
-?J>ı02Ô0_HóÄ“
-“
-"	(µ	(Ù J:Ì0rj`öHóÄ“
-“
-"	(ˆ	(Ì JC˘02Ì0rj`öHóÄ“
-“
-"	(˜	(¯ J4Ô0_HóÄ“
-“
-!()	(Ô Jô¸0a2Ì0rj`ö2Ó0_2Ô0_HóÄ“
-“
-"	(˙	( “
-7
-m
-0:8o(pqB;s	t(˚“
->“
-?J4Ó0_HóÄ“
-“
-!()	(Ó “
-“
-"Ü#ú20ù2	0õ0+"Íó õ ?20,20ë20í:?B+ƒ0ì“
-“
--	D(≈FB “
-“
--D(EFJAÇ02
-Ä0ûHóÄ“
-“
-"	(µ	(Å JAÜ02
-Ñ0üHóÄ“
-“
-"	(µ	(Ö JN–02	0j`ï0	HóÄ“
-“
-!(	(œ “
-?JyE0õHóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(á“
->“
-?J?€02ƒ0ìHóÄ“
-“
-"	(µ	(⁄ JÜ›0õ2ƒ0ìHóÄ“
-“
-"	(¶	(≈ “
-7
-m
-0:8o(pqB;s	t(à“
->“
-?J7Æ0†HóÄ“
-“
-!()	(Æ J4ä0HóÄ“
-“
-!(`	(ä J5Ñ0üHóÄ“
-“
-!()	(Ñ J5Ä0ûHóÄ“
-“
-!()	(Ä “
-“
-"®ó °20BJS0E2
-00	HóÄ“
-“
- (( “
-(J4*0EHóÄ“
-“
- ()(* JC+0EHóÄ“
-“
- ()(+ “
-(J>é0E2å0(HóÄ“
-“
-"	(¶	(ç “
-“
-"Ü#£20§2	0¢0+"‡ó ¢ ?20,:?B “
-“
--D(EFJ6ë06HóÄ“
-“
-!()	(ë J:ì0rj`•HóÄ“
-“
-"	(ˆ	(ì JyE0¢HóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(î“
->“
-?J4ï0.HóÄ“
-“
-!()	(ï “
-“
-"Ü#¶20Ä2	0Ç0+"æó Ç ?20,20ß:?B5ó0	Ω0.“
-“
--	D(òFB “
-“
--D(EFJAû02
-ú0™HóÄ“
-“
-"	(‡	(ù JRä02Å0o2É0p2	ü0FHóÄ“
-“
-"	(î	(† JP£02°00	j`HóÄ“
-“
-"	(ç	(¢ JyE0ÇHóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(§“
->“
-?J7¶0HóÄ“
-“
-"	(•	(¶ J6ß0.HóÄ“
-“
-!()	(ß J7®0HóÄ“
-“
-"	(•	(® J@¨02	©0HóÄ“
-“
-"	(™	(´ J@Æ02	©0HóÄ“
-“
-"	(™	(≠ J4Ø0HóÄ“
-“
-!(`	(Ø J°æ02∞0.2
-≤0´2≥072¥0.2µ072∂02∑02∏012∫0¨2	ª0JHóÄ“
-“
-"	(º	(Ω J@¡02	ø0HóÄ“
-“
-"	(‡	(¿ J6¬0.HóÄ“
-“
-!()	(¬ J[£02°00	j`2	√0HóÄ“
-“
-"	(ƒ	(≈ J9∆0j`zHóÄ“
-“
-"	(ò	(∆ Jf£02°00	j`2	√02	«0HóÄ“
-“
-"	(»	(… JNÃ02°00	j`HóÄ“
-“
-"	( 	(À Jé–0Ç2Õ02	Ω0.HóÄ“
-“
-"	(Œ	(ò “
-7
-m
-0:8o(pqB;s	t(œ“
->“
-?“
-“
-"∏ó ≠20BJT0Æ2
-00	HóÄ“
-“
- (( “
-(JK’0Æ2”00@HóÄ“
-“
-"	(¶	(‘ J5*0ÆHóÄ“
-“
- ()(* JD+0ÆHóÄ“
-“
- ()(+ “
-(“
-“
-"Áó ^20BJS0\2
-00	HóÄ“
-“
- (( “
-(J4*0\HóÄ“
-“
- ()(* JC+0\HóÄ“
-“
- ()(+ “
-(“
-“
-"Á ô20Ø“
-"Ü#±20≤2	0∞0+"åó ∞ ?20,:?B “
-“
--D(EFJ>€02Ÿ0HóÄ“
-“
-"	(Ï	(⁄ JwE0∞HóÄ“
-“
- ()(E “
-7
-m
-0:8o(pqB;s	t(‹“
->“
-?J4›0HóÄ“
-“
-!(`	(› J>‡02ﬁ0_HóÄ“
-“
-"	(µ	(ﬂ J>„02·0_HóÄ“
-“
-"	(µ	(‚ J4Ÿ0HóÄ“
-“
-!(`	(Ÿ J>Â02›0HóÄ“
-“
-"	(Ï	(‰ J4ﬁ0_HóÄ“
-“
-!()	(ﬁ J4·0_HóÄ“
-“
-!()	(· “
-“
-"µÁ ≥20ØJ5Á0HßÄ“
-“
-"	(	(Á J5Ë0HßÄ“
-“
-"	(	(Ë J5È0HßÄ“
-“
-"	(	(È “
-"Ëó ¥20BJS0D2
-00	HóÄ“
-“
- (( “
-(J4*0DHóÄ“
-“
- ()(* JC+0DHóÄ“
-“
- ()(+ “
-(“
-“
-"6Ü#∂20J*Ô0µ2Ì0rj`∑HáÄ“
-	(Ó"∆!∏20µ"∆!π20µ"∆!∫20µ"á#º20æ“
-	(≈"1Ü ª ?20ø:?B»0Wj`XRÌ0µ8@XÜé"∆!¿20µ"Ká!µ ?2
-0µ0¡20¬:?ÛRÌ0rj`∑8XñÑjjÒjÚjˆ“
-"Ëó √20BJS0M2
-00	HóÄ“
-“
- (( “
-(J4*0MHóÄ“
-“
- ()(* JC+0MHóÄ“
-“
- ()(+ “
-(“
-“
-"Òó ê2020ƒ20≈BJT0é2
-00	HóÄ“
-“
- (( “
-(J5¸0éHóÄ“
-“
-!()	(¸ J5*0éHóÄ“
-“
- ()(* JD+0éHóÄ“
-“
- ()(+ “
-(J>ˇ02˝0.HóÄ“
-“
-"	(µ	(˛ JAÅ0é2Ã0.HóÄ“
-“
-"	(¶	(Ä J4Ç0HóÄ“
-“
-!(`	(Ç JSÖ0é2∆0.2«0.2»0.HóÄ“
-“
-"	(É	(Ñ J5Ü0éHóÄ“
-“
-!()	(Ü “
-“
-‡
- Í
-com.iproov.sdkÚ
-_ "#&)(ANP$RQZ]\`bGgilkuxw|{ÄÉÖ[äâåèéòaúõ°£¢¶Ç≠^ô±∞≥¥∂∏π∫ºª¿µ√ê
