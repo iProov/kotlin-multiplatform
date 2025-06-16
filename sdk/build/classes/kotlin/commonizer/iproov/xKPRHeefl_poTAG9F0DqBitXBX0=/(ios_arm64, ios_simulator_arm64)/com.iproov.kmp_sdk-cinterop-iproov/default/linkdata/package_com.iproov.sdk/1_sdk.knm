@@ -1,0 +1,1202 @@
+
+≥M
+com
+iproov
+sdk
+WKWebExtensionCommand
+	Companion
+WKWebExtensionCommandMeta
+kotlinx
+cinterop
+ObjCClassOf
+platform
+darwin
+NSObject
+kotlin
+
+commonizer
+ObjCCallable
+ObjCConstructor
+initSelector
+init
+
+designated
+WKWebExtensionContext
+
+ObjCMethod
+encoding
+@16@0:8
+selector
+webExtensionContext
+isStret
+
+Deprecated
+level
+DeprecationLevel
+ERROR
+message
+Use constructor instead
+replaceWith
+ReplaceWith
+imports
+
+expression
+WKWebExtensionCommand()
+internal
+CCall
+ConsumesReceiver
+ReturnsRetained
+UIKit
+UIKeyCommand
+
+keyCommand
+String
+activationKey
+Unit
+
+v24@0:8@16
+setActivationKey:
+setActivationKey
+Long
+UIKeyModifierFlags
+modifierFlags
+
+v24@0:8q16
+setModifierFlags:
+setModifierFlags
+
+identifier
+UIMenuElement
+menuItem
+title
+q16@0:8
+ExternalObjCClass
+ExperimentalForeignApi
+WKWebExtensionControllerMeta
+NSObjectMeta
+CPointer
+cnames
+structs
+_NSZone
+zone
+WKWebExtensionController
+@24@0:8^{_NSZone=}16
+allocWithZone:
+)Use constructor or factory method instead
+allocWithZone
+new
+alloc
+collections
+Set
+allExtensionDataTypes
+IPTSKPinningValidator
+IPTSKPinningValidatorMeta
+
+Foundation
+NSURLAuthenticationChallenge
+	challenge
+	Function2
+$NSURLSessionAuthChallengeDisposition
+NSURLCredential
+completionHandler
+Boolean
+B32@0:8@16@?24
+"handleChallenge:completionHandler:
+handleChallenge
+IPTSKPinningValidator()
+
+__SecTrust
+Security
+SecTrustRef
+serverTrust
+forHostname
+IPTSKTrustDecision
+q32@0:8^{__SecTrust=}16@24
+evaluateTrust:forHostname:
+evaluateTrust
+TSKTrustEvaluationResult
+Any
+	NSInteger
+value
+Will be removed.
+byValue
+/TSKTrustEvaluationFailedInvalidCertificateChain
+/TSKTrustEvaluationErrorCouldNotGenerateSpkiHash
+(TSKTrustEvaluationErrorInvalidParameters
+TSKTrustEvaluationSuccess
+.TSKTrustEvaluationFailedUserDefinedTrustAnchor
+%TSKTrustEvaluationFailedNoMatchingPin
+Var
+CPrimitiveVar
+Type
+(Use sizeOf<T>() or alignOf<T>() instead.
+CEnumVar
+native
+	NativePtr
+rawPtr
+Enum
+CEnum
+)WKWebExtensionControllerConfigurationMeta
+NSSecureCodingProtocolMeta
+NSCopyingProtocolMeta
+%WKWebExtensionControllerConfiguration
+nonPersistentConfiguration
+B16@0:8
+supportsSecureCoding
+NSUUID
+
+@24@0:8@16
+configurationWithIdentifier:
+configurationWithIdentifier
+defaultConfiguration
+IPSuccessResult
+IPSuccessResultMeta
+UIImage
+frame
+IPSuccessResult()
+	IPSession
+IPSessionMeta
+cancel
+IPSession()
+IPRSSwizzleInfo
+IPRSSwizzleInfoMeta
+IPRSSwizzleInfo()
+	CFunction
+	Function0
+IPRSSwizzleOriginalIMP
+^?16@0:8
+getOriginalImplementation
+CPointed
+COpaquePointer
+:16@0:8
+IPPublicKeyMeta
+IPPublicKey
+WKWebExtensionTabProtocol
+NSObjectProtocol
+WebKit
+WKSnapshotConfiguration
+configuration
+forWebExtensionContext
+NSError
+v40@0:8@16@24@?32
+HtakeSnapshotUsingConfiguration:forWebExtensionContext:completionHandler:
+takeSnapshotUsingConfiguration
+context
+	Function1
+v32@0:8@16@?24
+/goBackForWebExtensionContext:completionHandler:
+goBackForWebExtensionContext
+
+B24@0:8@16
+,isReaderModeAvailableForWebExtensionContext:
++isReaderModeAvailableForWebExtensionContext
+pinned
+v36@0:8B16@20@?28
+3setPinned:forWebExtensionContext:completionHandler:
+	setPinned
+:shouldGrantPermissionsOnUserGestureForWebExtensionContext:
+9shouldGrantPermissionsOnUserGestureForWebExtensionContext
+.closeForWebExtensionContext:completionHandler:
+closeForWebExtensionContext
+Double
+
+zoomFactor
+v40@0:8d16@24@?32
+7setZoomFactor:forWebExtensionContext:completionHandler:
+setZoomFactor
+NSURL
+!pendingURLForWebExtensionContext:
+ pendingURLForWebExtensionContext
+titleForWebExtensionContext:
+titleForWebExtensionContext
+ULong
+
+NSUInteger
+
+Q24@0:8@16
+$indexInWindowForWebExtensionContext:
+#indexInWindowForWebExtensionContext
+isPinnedForWebExtensionContext:
+isPinnedForWebExtensionContext
+urlForWebExtensionContext:
+urlForWebExtensionContext
+
+fromOrigin
+:reloadFromOrigin:forWebExtensionContext:completionHandler:
+reloadFromOrigin
+)isReaderModeActiveForWebExtensionContext:
+(isReaderModeActiveForWebExtensionContext
+ parentTabForWebExtensionContext:
+parentTabForWebExtensionContext
+CValue
+CoreGraphics
+CGSize
+{CGSize=dd}24@0:8@16
+sizeForWebExtensionContext:
+sizeForWebExtensionContext
+NSLocale
+<detectWebpageLocaleForWebExtensionContext:completionHandler:
+)detectWebpageLocaleForWebExtensionContext
+	parentTab
+6setParentTab:forWebExtensionContext:completionHandler:
+setParentTab
+WKWebExtensionTabConfiguration
+EduplicateUsingConfiguration:forWebExtensionContext:completionHandler:
+duplicateUsingConfiguration
+1activateForWebExtensionContext:completionHandler:
+activateForWebExtensionContext
+.shouldBypassPermissionsForWebExtensionContext:
+-shouldBypassPermissionsForWebExtensionContext
+selected
+5setSelected:forWebExtensionContext:completionHandler:
+setSelected
+active
+=setReaderModeActive:forWebExtensionContext:completionHandler:
+setReaderModeActive
+%isPlayingAudioForWebExtensionContext:
+$isPlayingAudioForWebExtensionContext
+2goForwardForWebExtensionContext:completionHandler:
+goForwardForWebExtensionContext
+(isLoadingCompleteForWebExtensionContext:
+'isLoadingCompleteForWebExtensionContext
+WKWebExtensionWindowProtocol
+windowForWebExtensionContext:
+windowForWebExtensionContext
+
+d24@0:8@16
+!zoomFactorForWebExtensionContext:
+ zoomFactorForWebExtensionContext
+isMutedForWebExtensionContext:
+isMutedForWebExtensionContext
+	WKWebView
+webViewForWebExtensionContext:
+webViewForWebExtensionContext
+!isSelectedForWebExtensionContext:
+ isSelectedForWebExtensionContext
+muted
+2setMuted:forWebExtensionContext:completionHandler:
+setMuted
+url
+1loadURL:forWebExtensionContext:completionHandler:
+loadURL
+IPTSKReportsRateLimiter
+IPTSKReportsRateLimiterMeta
+IPTSKReportsRateLimiter()
+IPTSKPinFailureReport
+report
+shouldRateLimitReport:
+shouldRateLimitReport
+IPFailureResultMeta
+IPFailureResult
+ WKWebExtensionWindowProtocolMeta
+NSObjectProtocolMeta
+IPKeyPairMeta
+	IPKeyPair
+WKWebExtensionWindowType
+WKWebExtensionWindowTypePopup
+WKWebExtensionWindowTypeNormal
+ activeTabForWebExtensionContext:
+activeTabForWebExtensionContext
+.focusForWebExtensionContext:completionHandler:
+focusForWebExtensionContext
+WKWebExtensionWindowState
+state
+v40@0:8q16@24@?32
+8setWindowState:forWebExtensionContext:completionHandler:
+setWindowState
+ isPrivateForWebExtensionContext:
+isPrivateForWebExtensionContext
+
+q24@0:8@16
+!windowTypeForWebExtensionContext:
+ windowTypeForWebExtensionContext
+"windowStateForWebExtensionContext:
+!windowStateForWebExtensionContext
+CGRect
+0v64@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16@48@?56
+2setFrame:forWebExtensionContext:completionHandler:
+setFrame
+List
+tabsForWebExtensionContext:
+tabsForWebExtensionContext
+){CGRect={CGPoint=dd}{CGSize=dd}}24@0:8@16
+frameForWebExtensionContext:
+frameForWebExtensionContext
+!IPTSKNSURLConnectionDelegateProxy
+%IPTSKNSURLConnectionDelegateProxyMeta
+NSURLConnectionDelegateProtocol
+
+IPTrustKit
+trustKit
+connectionDelegate
+$initWithTrustKit:connectionDelegate:
+	objcnames
+classes
+Protocol
+	aProtocol
+conformsToProtocol:
+conformsToProtocol
+	aSelector
+
+@24@0:8:16
+performSelector:
+performSelector
+#IPTSKNSURLConnectionDelegateProxy()
+	ObjCClass
+#16@0:8
+class
+debugDescription
+
+superclass
+aClass
+
+B24@0:8#16
+isKindOfClass:
+isKindOfClass
+isMemberOfClass:
+isMemberOfClass
+isProxy
+NSURLConnection
+
+connection
+)willSendRequestForAuthenticationChallenge
+v32@0:8@16@24
+5connection:willSendRequestForAuthenticationChallenge:
+object
+isEqual:
+isEqual
+description
+
+withObject
+@32@0:8:16@24
+performSelector:withObject:
+Q16@0:8
+hash
+
+B24@0:8:16
+respondsToSelector:
+respondsToSelector
+_withObject
+@40@0:8:16@24@32
+&performSelector:withObject:withObject:
+sel
+forwardingTargetForSelector:
+forwardingTargetForSelector
+@32@0:8@16@24
+?IPTSKNSURLConnectionDelegateProxy(trustKit, connectionDelegate)
+initWithTrustKit
+IPTSKPinningValidatorResult
+IPTSKPinningValidatorResultMeta
+serverHostname
+IPTSKPinningValidatorResult()
+evaluationResult
+certificateChain
+finalTrustDecision
+NSTimeInterval
+d16@0:8
+validationDuration
+WKWebExtensionTabProtocolMeta
+IPErrorCodeMeta
+IPErrorCode
+serverError
+captureAlreadyActive
+notSupported
+networkError
+cameraPermissionDenied
+userTimeout
+unexpectedError
+consentRequired
+"IPTSKNSURLSessionDelegateProxyMeta
+ swizzleNSURLSessionConstructors:
+swizzleNSURLSessionConstructors
+IPTSKNSURLSessionDelegateProxy
+IProovViewDelegateProtocolMeta
+IPRSSwizzle
+IPRSSwizzleMeta
+IPRSSwizzle()
+"IProovPresentationDelegateProtocol
+
+ObjCObject
+UIViewController
+iProovViewController
+
+completion
++presentWithIProovViewController:completion:
+presentWithIProovViewController
++dismissWithIProovViewController:completion:
+dismissWithIProovViewController
+WKWebExtensionDataRecordMeta
+WKWebExtensionDataRecord
+WKWebExtensionActionMeta
+WKWebExtensionAction
+#NSURLConnectionDelegateProtocolMeta
+#swizzleNSURLConnectionConstructors:
+"swizzleNSURLConnectionConstructors
+'IPTSKTrustDecisionShouldAllowConnection
+'IPTSKTrustDecisionShouldBlockConnection
+!IPTSKTrustDecisionDomainNotPinned
+WKWebExtensionMeta
+WKWebExtension
+NSBundle
+appExtensionBundle
+2extensionWithAppExtensionBundle:completionHandler:
+extensionWithAppExtensionBundle
+resourceBaseURL
+/extensionWithResourceBaseURL:completionHandler:
+extensionWithResourceBaseURL
+%WKWebExtensionWindowConfigurationMeta
+!WKWebExtensionWindowConfiguration
+IPTrustKitMeta
+Map
+sharedContainerIdentifier
+0initWithConfiguration:sharedContainerIdentifier:
+initWithConfiguration:
+dispatch_queue_t
+pinningValidatorCallbackQueue
+!setPinningValidatorCallbackQueue:
+ setPinningValidatorCallbackQueue
+IPTrustKit()
+	Function3
+IPTSKPinningValidatorCallback
+@?16@0:8
+pinningValidatorCallback
+pinningValidator
+setPinningValidator:
+setPinningValidator
+trustKitConfig
+IPTrustKit(trustKitConfig)
+initWithConfiguration
+5IPTrustKit(trustKitConfig, sharedContainerIdentifier)
+v24@0:8@?16
+setPinningValidatorCallback:
+setPinningValidatorCallback·
+ 
+ 
+
+ 
+ 
+ 
+
+
+ 
+	
+	
+
+
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+! 
+%
+& 
+' 
+( 
+	)
+* 
+, 
+. 
+2 
+3 
+9 
+= 
+> 
+? 
+
+@ 
+A 
+B
+%C
+&D 
+F 
+M
+)N 
+P 
++ 
+Q 
+	R
+.S 
+U 
+.V 
+.W 
+Y 
+&^ 
+	_
+5` 
+c 
+g 
+8 
+h 
+
+i 
+8m 
+8n 
+8o 
+8p 
+8q 
+8r 
+8s 
+B 
+t 
+Du 
+w 
+x
+G%
+Hy 
+y 
+{ 
+| 
+} 
+.~ 
+. 
+Ä 
+.Ñ 
+â 
+R 
+ä 
+ã 
+é 
+V 
+è 
+í 
+Y 
+ì 
+ï 
+ñ 
+ó 
+ö 
+õ 
+ù 
+û 
+ü 
+
+† 
+	°
+e¢ 
+.• 
+™ 
+π 
+.æ 
+√ 
+
+ƒ 
+” 
+	‘
+n’ 
+.Ÿ 
+ﬂ 
+Ú 
+e˙ 
+Ö 
+t 
+Ü 
+à 
+å 
+ç 
+é 
+
+è 
+ê 
+ë 
+í 
+~ 
+~ì 
+~î 
+~s 
+Ç 
+ô 
+n• 
+)© 
+Ø 
+á 
+∞ 
+.± 
+≤ 
+∂
+å∑
+ç∏ 
+¡ 
+.Õ 
+Á 
+ë 
+Ë 
+.Ó 
+Ò 
+Ú 
+Û 
+¸ 
+ˇ 
+Ä 
+Å 
+õ 
+Ç 
+Ñ 
+Ö 
+Ü 
+ç 
+é 
+è 
+ê 
+.ë 
+7 
+7î 
+7ï 
+7s 
+© 
+7ñ 
+ó 
+ò 
+.ô 
+† 
+° 
+ã 
+¢ 
+)£ 
+
+ß 
+¨ 
+≠ "Ü#20200"ßó  20:B “
+“
+(J40HóÄ“
+“
+ (( Jw0HóÄ“
+“
+ (( “
+6
+
+08( B"#($“
+“
+J4+0HóÄ“
+“
+ ((+ J<102-0HóÄ“
+“
+ (/(0 J4-0HóÄ“
+“
+ ((- J>702
+40j`HóÄ“
+“
+ (5(6 J280HóÄ“
+“
+ ((8 J2:0HóÄ“
+“
+ ((: J2;0HóÄ“
+“
+ ((; J640j`HóÄ“
+“
+ (<(4 “
+ “
+!"üó "20#BJSJ0(2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ4K0(HóÄ“
+“
+ ((K JCL0(HóÄ“
+“
+ ((L “
+(IJ6O0*HóÄ“
+“
+ ((O “
+ “
+!"Áó 20#BJSJ02E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ4K0HóÄ“
+“
+ ((K JCL0HóÄ“
+“
+ ((L “
+(I“
+ “
+!"Ü#,20-20+0"·ó + 20:B “
+“
+(JZ\032T0/2X0j`102000HóÄ“
+“
+ (Z([ Jw0+HóÄ“
+“
+ (( “
+6
+
+08( B"#(]“
+“
+JPf072a040$j`62b0HóÄ“
+“
+ (d(e “
+ “
+!"0Ü#920:J%l082
+j0j`;HáÄ“
+(k"	∆!<208"	∆!=208"	∆!>208"	∆!?208"	∆!@208"	∆!A208"á#C20E“
+(v",Ü B 20F:B
+z0Ij`JRj088@XÜé"Há!8 2080K20L:sRj0j`;8XñÑjmjnjojpjqjr“
+!"—ó M20#20N20OBJSJ0P2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ4Å0PHóÄ“
+“
+!(	(Å J4K0PHóÄ“
+“
+ ((K JCL0PHóÄ“
+“
+ ((L “
+(IJ5É03HóÄ“
+“
+"	(Ç	(É J=á0P280QHóÄ“
+“
+"	(Ö	(Ü J4à0PHóÄ“
+“
+!(	(à “
+ “
+!"Ü#S20T20R0"Ïó R 20:B “
+“
+(J6å0UHóÄ“
+“
+!(	(å Jx0RHóÄ“
+“
+ (( “
+7
+
+08( B"	#(ç“
+“
+“
+ “
+!"Ü#W20X20V0"Îó V 20:B “
+“
+(J5ê03HóÄ“
+“
+"	(Ç	(ê Jx0VHóÄ“
+“
+ (( “
+7
+
+08( B"	#(ë“
+“
+“
+ “
+!"Ü#Z20[20Y0"Ëó Y 20:B “
+“
+(Jx0YHóÄ“
+“
+ (( “
+7
+
+08( B"	#(î“
+“
+JOô
+00]0\0$j`^HóÄ“
+“
+"	(ò	(ô JC0_0$j``HóÄ“
+“
+!	(ú( R0_0$j``8XÜÑ“
+ “
+!"Áó T20#BJSJ0R2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ4K0RHóÄ“
+“
+ ((K JCL0RHóÄ“
+“
+ ((L “
+(I“
+ “
+!"Áó a20#BJSJ0b2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ4K0bHóÄ“
+“
+ ((K JCL0bHóÄ“
+“
+ ((L “
+(I“
+ “
+!"¢Á c20dJe®02£0f2§02X0U0g000HóÄ“
+“
+"	(¶	(ß JT≠02©02X0g00hHóÄ“
+“
+"	(´	(¨ J>∞032©0HóÄ“
+“
+"	(Æ	(Ø J]¥02±032§02X0g00hHóÄ“
+“
+"	(≤	(≥ J>∂032©0HóÄ“
+“
+"	(Æ	(µ JT∏02©02X0g00hHóÄ“
+“
+"	(´	(∑ J]Ω02∫0i2§02X0g00hHóÄ“
+“
+"	(ª	(º J@¿0j2©0HóÄ“
+“
+"	(Ö	(ø J@¬02©0HóÄ“
+“
+"	(Ö	(¡ JB«0kj`l2©0HóÄ“
+“
+"	(≈	(∆ J>…032©0HóÄ“
+“
+"	(Æ	(» J@À0j2©0HóÄ“
+“
+"	(Ö	(  J]Œ02Ã032§02X0g00hHóÄ“
+“
+"	(≤	(Õ J>–032©0HóÄ“
+“
+"	(Æ	(œ J@“0c2©0HóÄ“
+“
+"	(Ö	(— JDÿ0o0m2©0HóÄ“
+“
+"	(÷	(◊ J\€02©02X0p0g000HóÄ“
+“
+"	(´	(⁄ J_ﬁ02	‹0c2§02X0g00hHóÄ“
+“
+"	(¶	(› Je·02£0q2§02X0c0g000HóÄ“
+“
+"	(¶	(‡ JT„02©02X0g00hHóÄ“
+“
+"	(´	(‚ J>Â032©0HóÄ“
+“
+"	(Æ	(‰ J]Ë02Ê032§02X0g00hHóÄ“
+“
+"	(≤	(Á J]Î02È032§02X0g00hHóÄ“
+“
+"	(≤	(Í J>Ì032©0HóÄ“
+“
+"	(Æ	(Ï JTÔ02©02X0g00hHóÄ“
+“
+"	(´	(Ó J>Ò032©0HóÄ“
+“
+"	(Æ	( J@Ù0r2©0HóÄ“
+“
+"	(Ö	(Û J>˜0i2©0HóÄ“
+“
+"	(ı	(ˆ J>˘032©0HóÄ“
+“
+"	(Æ	(¯ J@¸0s2©0HóÄ“
+“
+"	(Ö	(˚ J>˛032©0HóÄ“
+“
+"	(Æ	(˝ J]Å02ˇ032§02X0g00hHóÄ“
+“
+"	(≤	(Ä J]Ñ02Ç0j2§02X0g00hHóÄ“
+“
+"	(¶	(É “
+!"Ü#u20v20t0"Ùó t 20:B “
+“
+(Jx0tHóÄ“
+“
+ (( “
+7
+
+08( B"	#(á“
+“
+J>ã032â0wHóÄ“
+“
+"	(Æ	(ä “
+ “
+!"Áó x20#BJSJ0y2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ4K0yHóÄ“
+“
+ ((K JCL0yHóÄ“
+“
+ ((L “
+(I“
+ “
+!"Á z20{“
+!"Áó |20#BJSJ0}2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ4K0}HóÄ“
+“
+ ((K JCL0}HóÄ“
+“
+ ((L “
+(I“
+ “
+!"0Ü#20:J%l0~2
+j0j`;HáÄ“
+(k"
+∆!Ä20~"
+∆!Å20~"á#É20E“
+(v"-Ü Ç 20F:B
+z0Ij`JRj0~8@XÜé":á!~ 20~0K20L:sRj0j`;8XñÑjìjî“
+!"èÁ r20dJ@ñ0c2©0HóÄ“
+“
+"	(Ö	(ï JTò02©02X0g00hHóÄ“
+“
+"	(´	(ó J^ù02ö0Ñ2§02X0g00hHóÄ“
+“
+"	(õ	(ú JT∏02©02X0g00hHóÄ“
+“
+"	(´	(∑ J>ü032©0HóÄ“
+“
+"	(Æ	(û J>¢0~2©0HóÄ“
+“
+"	(†	(° J?§0Ñ2©0HóÄ“
+“
+"	(†	(£ Jd®02å	0Ö0m2§02X0g00hHóÄ“
+“
+"	(¶	(ß JC´0Ü2©0HóÄ“
+“
+"	(Ö	(™ JEÆ	0Ö0m2©0HóÄ“
+“
+"	(¨	(≠ “
+!"Ü#à20â2	0á0"Îó á 2020ä:B “
+“
+( B7≥0ã
+¥0ä“
+“
+	(µJAª032
+π0éHóÄ“
+“
+"	(Æ	(∫ JPø0:2º0_0$j``HóÄ“
+“
+"	(Ω	(æ Jy0áHóÄ“
+“
+ (( “
+7
+
+08( B"	#(¿“
+“
+J8√0èHóÄ“
+“
+"	(¬	(√ J6ƒ0HóÄ“
+“
+!(	(ƒ J8≈0èHóÄ“
+“
+"	(¬	(≈ JA…032
+∆0èHóÄ“
+“
+"	(«	(» JAÀ032
+∆0èHóÄ“
+“
+"	(«	(  J5Ã03HóÄ“
+“
+"	(Ç	(Ã JHŒ02Œ0ê2œ0/HóÄ“
+“
+"	(–	(— J@‘032	“0:HóÄ“
+“
+"	(Æ	(” J6’0HóÄ“
+“
+!(	(’ J[ø0:2º0_0$j``2	÷0:HóÄ“
+“
+"	(◊	(ÿ J9⁄0kj`lHóÄ“
+“
+"	(Ÿ	(⁄ JN›032º0_0$j``HóÄ“
+“
+"	(€	(‹ Jfø0:2º0_0$j``2	÷0:2	ﬁ0:HóÄ“
+“
+"	(ﬂ	(‡ JN„0:2·0_0$j``HóÄ“
+“
+"	(Ω	(‚ JíÊ0á2≥0ã2
+¥0äHóÄ“
+“
+"	(‰	(µ “
+7
+
+08( B"	#(Â“
+“
+“
+ “
+!"Ü#í20ì2	0ë0"§ó ë 20:B “
+“
+(J4È0HóÄ“
+“
+!(	(È Jy0ëHóÄ“
+“
+ (( “
+7
+
+08( B"	#(Í“
+“
+J4Î08HóÄ“
+“
+!(<	(Î J9Ï0ÜHóÄ“
+“
+!(	(Ï J4Ì07HóÄ“
+“
+!(<	(Ì J:0ij`îHóÄ“
+“
+"	(Ô	( RÏ0Ü8XÜÑR0ij`î8XÜÑRÌ078XÜÑRÈ08XÜÑRÎ088XÜÑ“
+ “
+!"Á ï20{“
+!"ªó ñ20#BJTJ0ó2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ8Ù0j`;HóÄ“
+“
+!(<	(Ù J8ı0j`;HóÄ“
+“
+!(<	(ı J8ˆ0j`;HóÄ“
+“
+!(<	(ˆ J5K0óHóÄ“
+“
+ ((K J8˜0j`;HóÄ“
+“
+!(<	(˜ JDL0óHóÄ“
+“
+ ((L “
+(IJ8¯0j`;HóÄ“
+“
+!(<	(¯ J8˘0j`;HóÄ“
+“
+!(<	(˘ J8˙0j`;HóÄ“
+“
+!(<	(˙ J8˚0j`;HóÄ“
+“
+!(<	(˚ “
+ “
+!"´ó ò20#BJ>˛02≥0ãHóÄ“
+“
+!(/	(˝ JTJ0ô2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ5K0ôHóÄ“
+“
+ ((K JDL0ôHóÄ“
+“
+ ((L “
+(I“
+ “
+!"Á ö20:“
+!"Ü#ú20ù2	0õ0"∂ó õ 20:B “
+“
+(Jy0õHóÄ“
+“
+ (( “
+7
+
+08( B"	#(É“
+“
+“
+ “
+!"¥Á û20üJPä02á0†2à
+00]HßÄ“
+“
+"	(´	(â JPå02á0†2à
+00]HßÄ“
+“
+"	(´	(ã “
+!"Îó °20#BJTJ0¢2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ5K0¢HóÄ“
+“
+ ((K JDL0¢HóÄ“
+“
+ ((L “
+(I“
+ “
+!"Îó £20#BJTJ0§2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ5K0§HóÄ“
+“
+ ((K JDL0§HóÄ“
+“
+ ((L “
+(I“
+ “
+!"∞ó â20#20•BJTJ0á2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ>ì02≥0ãHóÄ“
+“
+!(/	(í J5K0áHóÄ“
+“
+ ((K JDL0áHóÄ“
+“
+ ((L “
+(I“
+ “
+!"1Ü#¶20:J%l072
+j0j`;HáÄ“
+(k"
+∆!ß207"
+∆!®207"á#™20E“
+(v"-Ü © 20F:B
+z0Ij`JRj078@XÜé"
+∆!´207"?á!7 2070K20L:sRj0j`;8XñÑjîjïjñ“
+!"™ó ¨20#BJTJ0≠2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ^ú02ö0Æ2X0≠0g000HóÄ“
+“
+"	(´	(õ J5K0≠HóÄ“
+“
+ ((K JDL0≠HóÄ“
+“
+ ((L “
+(IJ]ü02ù0j2X0≠0g000HóÄ“
+“
+"	(´	(û “
+ “
+!"Îó Ø20#BJTJ0∞2E
+0'0$HóÄ“
+“
+ (G(H “
+(IJ5K0∞HóÄ“
+“
+ ((K JDL0∞HóÄ“
+“
+ ((L “
+(I“
+ “
+!"Ü#±20≤2	0ã0"µ	ó ã 20:BB£0:0≥	§0“
+“
+	(•B “
+“
+(B7£0:0≥“
+“
+	(¶JF™02®0j`¥HóÄ“
+“
+!(/	(© Jy0ãHóÄ“
+“
+ (( “
+7
+
+08( B"	#(´“
+“
+JkØ80ë00:0≥00µj`∂HóÄ“
+“
+"	(Æ	(Ø J=≤02∞0+HóÄ“
+“
+!(/	(± J=®0j`¥HóÄ“
+“
+!(	(® Jêµ0ã2≥0:0≥HóÄ“
+“
+"	(Ö	(¶ “
+7
+
+08( B"	#(¥“
+“
+Jõµ0ã2≥0:0≥2	§0HóÄ“
+“
+"	(‰	(• “
+7
+
+08( B"	#(∂“
+“
+Jtπ02=Ø80ë00:0≥00µj`∂HóÄ“
+“
+"	(∑	(∏ J4∞0+HóÄ“
+“
+!(	(∞ R∞0+8@XÜéREØ80ë00:0≥00µj`∂8@XÜéR®0j`¥8@XÜé“
+ “
+!‡
+ Í
+com.iproov.sdkÚ
+[",+9<=>?@ACB8MSRWVZYTacutxz|ÄÅÉÇ~ràáíëïñòöúõû°£â¶ß®™©´7¨Ø±ã

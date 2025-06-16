@@ -1,0 +1,17 @@
+[
+  {
+    "moduleId": "org.jetbrains.kotlinx:atomicfu:0.23.2",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedCInteropMetadataLibraries/nativeMain/org.jetbrains.kotlinx-atomicfu-0.23.2-nativeMain-cinterop/org.jetbrains.kotlinx_atomicfu-cinterop-interop-yBS35w.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "org.jetbrains.compose.ui:ui-uikit:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedCInteropMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-uikit-1.6.11-uikitMain-cinterop/org.jetbrains.compose.ui_ui-uikit-cinterop-utils-oguluQ.klib",
+    "sourceSetName": "uikitMain"
+  },
+  {
+    "moduleId": "io.ktor:ktor-utils:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedCInteropMetadataLibraries/nativeMain/io.ktor-ktor-utils-2.3.12-iosMain-cinterop/io.ktor_ktor-utils-cinterop-threadUtils-TE4abA.klib",
+    "sourceSetName": "iosMain"
+  }
+]

@@ -1,0 +1,5 @@
+language = Objective-C
+
+modules = iProov
+package = com.iproov.sdk
+

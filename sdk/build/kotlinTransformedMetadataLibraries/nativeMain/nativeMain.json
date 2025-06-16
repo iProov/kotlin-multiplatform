@@ -1,0 +1,217 @@
+[
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-1.6.11-uikitMain-aASdXg.klib",
+    "sourceSetName": "uikitMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-1.6.11-darwinMain-aASdXg.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-1.6.11-nativeMain-aASdXg.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-1.6.11-jsNativeMain-dXXsCQ.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-1.6.11-skikoMain-dXXsCQ.klib",
+    "sourceSetName": "skikoMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material3:material3:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.material3-material3-1.6.11-darwinMain-rFGDeg.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material3:material3:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.material3-material3-1.6.11-nativeMain-rFGDeg.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material3:material3:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.material3-material3-1.6.11-jsNativeMain-0hrc0g.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material3:material3:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.material3-material3-1.6.11-skikoMain-0hrc0g.klib",
+    "sourceSetName": "skikoMain"
+  },
+  {
+    "moduleId": "module io.ktor:ktor-client-core:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-client-core-2.3.12-posixMain-FU-9lg.klib",
+    "sourceSetName": "posixMain"
+  },
+  {
+    "moduleId": "module io.ktor:ktor-client-content-negotiation:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-client-content-negotiation-2.3.12-posixMain-jI37cw.klib",
+    "sourceSetName": "posixMain"
+  },
+  {
+    "moduleId": "module io.ktor:ktor-serialization-kotlinx-json:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-serialization-kotlinx-json-2.3.12-posixMain-sJ8SDA.klib",
+    "sourceSetName": "posixMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-1.6.11-uikitMain-OEwx0A.klib",
+    "sourceSetName": "uikitMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-1.6.11-darwinMain-OEwx0A.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-1.6.11-nativeMain-OEwx0A.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-1.6.11-jsNativeMain-OrzU9w.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui:1.6.11",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-1.6.11-skikoMain-OrzU9w.klib",
+    "sourceSetName": "skikoMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-datetime:0.6.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-datetime-0.6.0-darwinMain-O4UcJA.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-datetime:0.6.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-datetime-0.6.0-tzdbOnFilesystemMain-v1Leig.klib",
+    "sourceSetName": "tzdbOnFilesystemMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-datetime:0.6.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-datetime-0.6.0-tzfileMain-v1Leig.klib",
+    "sourceSetName": "tzfileMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-datetime:0.6.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-datetime-0.6.0-nativeMain-v1Leig.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-datetime:0.6.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-datetime-0.6.0-commonMain-v1Leig.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.8.0-nativeDarwinMain-sy5nKg.klib",
+    "sourceSetName": "nativeDarwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.8.0-nativeMain-UxhG-g.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module io.ktor:ktor-http:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-http-2.3.12-posixMain-W5sIeA.klib",
+    "sourceSetName": "posixMain"
+  },
+  {
+    "moduleId": "module io.ktor:ktor-serialization-kotlinx:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-serialization-kotlinx-2.3.12-posixMain-s53Slg.klib",
+    "sourceSetName": "posixMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-serialization-json-1.5.1-nativeMain-xO3r_w.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose:2.8.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-runtime-compose-2.8.0-commonMain-mvP4Vw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-viewmodel:2.8.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-viewmodel-2.8.0-nativeMain-ydSu5Q.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-viewmodel:2.8.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-viewmodel-2.8.0-nonJvmMain-ydSu5Q.klib",
+    "sourceSetName": "nonJvmMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-viewmodel:2.8.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-viewmodel-2.8.0-commonMain-ydSu5Q.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.2",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-serialization-core-1.6.2-nativeMain-0z2eOA.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module io.ktor:ktor-utils:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-utils-2.3.12-darwinMain-TE4abA.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module io.ktor:ktor-utils:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-utils-2.3.12-nixMain-kEcFvw.klib",
+    "sourceSetName": "nixMain"
+  },
+  {
+    "moduleId": "module io.ktor:ktor-utils:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-utils-2.3.12-posixMain-kEcFvw.klib",
+    "sourceSetName": "posixMain"
+  },
+  {
+    "moduleId": "module io.ktor:ktor-websockets:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-websockets-2.3.12-posixMain-8-9-_g.klib",
+    "sourceSetName": "posixMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-common:2.8.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-common-2.8.0-nonJvmMain-_oGBew.klib",
+    "sourceSetName": "nonJvmMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-common:2.8.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-common-2.8.0-commonMain-_oGBew.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-runtime:2.8.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-runtime-2.8.0-nativeMain-Cd-IGw.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-runtime:2.8.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-runtime-2.8.0-nonJvmMain-Cd-IGw.klib",
+    "sourceSetName": "nonJvmMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-runtime:2.8.0",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-runtime-2.8.0-commonMain-Cd-IGw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module io.ktor:ktor-io:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-io-2.3.12-darwinMain-sbySvA.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module io.ktor:ktor-io:2.3.12",
+    "file": "/Users/fernandorauber/StudioProjects/iProov KMP/sdk/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-io-2.3.12-posixMain-3YsjwQ.klib",
+    "sourceSetName": "posixMain"
+  }
+]

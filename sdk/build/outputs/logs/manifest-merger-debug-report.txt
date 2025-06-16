@@ -1,0 +1,40 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:2:1-19:12
+	package
+		INJECTED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:5:22-64
+application
+ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:7:5-17:19
+provider#androidx.startup.InitializationProvider
+ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:8:9-16:20
+	tools:node
+		ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:12:13-31
+	android:authorities
+		ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:10:13-68
+	android:exported
+		ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:9:13-67
+meta-data#com.iproov.kmp.AppContextInitializer
+ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:13:13-15:52
+	android:value
+		ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:15:17-49
+	android:name
+		ADDED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml:14:17-68
+uses-sdk
+INJECTED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/fernandorauber/StudioProjects/iProov KMP/sdk/src/androidMain/AndroidManifest.xml

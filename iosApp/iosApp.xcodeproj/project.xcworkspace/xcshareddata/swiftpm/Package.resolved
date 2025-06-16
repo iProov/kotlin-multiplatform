@@ -1,0 +1,15 @@
+{
+  "originHash" : "675e3f7a0b40d802228efee2c61f7690381d3887980f14cc875323130a7e9288",
+  "pins" : [
+    {
+      "identity" : "ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iProov/ios",
+      "state" : {
+        "revision" : "439f95236951ae4878b463ab614318510bee77e0",
+        "version" : "12.3.1"
+      }
+    }
+  ],
+  "version" : 3
+}
