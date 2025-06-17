@@ -80,11 +80,11 @@
         {
           "name": "sdk-iosArm64Main-1.0.0.klib",
           "url": "sdk-iosarm64-1.0.0.klib",
-          "size": 72994,
-          "sha512": "5cd1736796323fe693fc3f78a31fc39f1775908a47a4696bdcbe6513b0131eed0cf6ebbd6b898c45de2b3173d21045e8fc1bbe75382a8f3e71ef045c06ca7115",
-          "sha256": "3e77c49a50429b88485606e54f6bcfe57a1ec302b913cdfe666c24df2c207efe",
-          "sha1": "cf2adabb914070594a1a5250edd4f9c18495fc5a",
-          "md5": "e65ee8823e87ae9174c4e4fa27f8e4df"
+          "size": 72997,
+          "sha512": "c06c04b3e50d24acbc11d2b45cc95c978f2e9fed9d9f1ca8502898cc99f6aeb6e0be4b76127df442aa4bec4558e02bf1b09e312076dcbe2be1a5b4496744ed89",
+          "sha256": "b9dbeebd14015c74e88fedaaa5b04b6371befd3556960824809e927fdace7cb3",
+          "sha1": "1f7b4dc2c1674cb82b303bd7fe66a2bdec0d1830",
+          "md5": "0150caa5eb636ff76a66fa9b6d5262b1"
         },
         {
           "name": "sdk-iosArm64Cinterop-iproovMain-1.0.0.klib",
@@ -187,10 +187,10 @@
           "name": "sdk-1.0.0.kotlin_resources.zip",
           "url": "sdk-iosarm64-1.0.0-kotlin_resources.kotlin_resources.zip",
           "size": 324,
-          "sha512": "4af549ea7dcb552a0df296aeff47c34afd452a6e6785e1c938600681bcf08d3de3de1ee931f8e9f4a08bfd49dd7c9406a2e94d8b58b104e221f52c66914d9fdf",
-          "sha256": "672b72194eb10f89eac389f80f74d21810ca24d38a372eac60415df1a5462f14",
-          "sha1": "b8ccff445ceb5cfd80a225d343c498a68e4ba627",
-          "md5": "3e49a550fa57691bca11a5a062ec1f3f"
+          "sha512": "16c5d207a0d43495ea17e43e0521e38d84e8f8ea670ad507fd9a838596172bb169f27e70f7698a751c68487e9482491ebd83d7671f38c96e547e6581a204148a",
+          "sha256": "eca30e90fd586f96c707004bcd7cdd80d0f96308287c0c6d4346afb24727b3d1",
+          "sha1": "31a182552dc5b6f138cbb90799fef266c0c9630f",
+          "md5": "9d6af4172f43d4a133b8d929efd46fc7"
         }
       ]
     },
@@ -260,10 +260,10 @@
           "name": "sdk-iosarm64-1.0.0-metadata.jar",
           "url": "sdk-iosarm64-1.0.0-metadata.jar",
           "size": 261,
-          "sha512": "0ca69269e89a7704863b6a132b33182e5a292746ef90abff3c778ca53fb524d58a245080d276a571ee538c3f621d2ca6e719116a764b30bf5a812a40efd118a5",
-          "sha256": "ac32133d3453990004d29cb62f1f6d2bee73a18949207472a822db6f1c3e6a22",
-          "sha1": "3d7ab57bd97bc67661b0fccc699197101002fbc5",
-          "md5": "6d878449bce76007d50c175e6ba86529"
+          "sha512": "7e4c92dc9d61c433a7eedff4d6628e96792daf722292d0609aeffbc236dab1bb498c40e192b78c851e9c3f3097a4aa20bf17547be5c65469bbdc3ab82970ed9f",
+          "sha256": "261b7bf2b5741f61bd9aeafa2c87631ce90da22f9be53a66a936621f52b48b5b",
+          "sha1": "26b5929aaf4566cece583fa406facab475d2014a",
+          "md5": "39dd597ccba28313c6e2467dc43f2ca3"
         }
       ]
     }
