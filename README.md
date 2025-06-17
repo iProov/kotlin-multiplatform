@@ -47,7 +47,7 @@ The iProov Kotlin Multiplatform SDK is provided via this repository, which conta
     ```groovy
     repositories {
         maven { url 'https://raw.githubusercontent.com/iProov/android/master/maven/' }
-        maven { url 'https://raw.githubusercontent.com/iProov/kotlin_multiplatform/master/maven/' }
+        maven { url 'https://raw.githubusercontent.com/iProov/kotlin_multiplatform/main/maven/' }
     }
     ```
 
