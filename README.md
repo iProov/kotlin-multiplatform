@@ -1,4 +1,4 @@
-![iProov: Flexible authentication for identity assurance](https://github.com/iProov/kotlin-multiplatform/blob/master/banner.jpg)
+![iProov: Flexible authentication for identity assurance](https://github.com/iProov/kotlin-multiplatform/blob/main/banner.jpg)
 # iProov Biometrics Kotlin Multiplatform SDK
 
 ## Introduction
