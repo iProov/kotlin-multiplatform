@@ -187,10 +187,10 @@
           "name": "sdk-1.0.0.kotlin_resources.zip",
           "url": "sdk-iosarm64-1.0.0-kotlin_resources.kotlin_resources.zip",
           "size": 324,
-          "sha512": "ad7fd0e3de30c1cc3a3e6001d4b0783d6f494250448dbfec8742a29bbb3c0330c67b845aa01c1e5e9bfd99c9abbd88951a3bb673bacaefe8b62754a2f16d207f",
-          "sha256": "b7585ee1753e1402529aebbc14767d2032f032773cc26e4bba0545398244ac23",
-          "sha1": "0f09bbf68f2f6fa4cdf85d98ed3f7b3db736eeaf",
-          "md5": "811ee78619cad0d63ee74bc498567a63"
+          "sha512": "e9fb5ea05ccbf284b41b96818ee6cd800d8ce4fa288ffc97792d4da219f3fe372c6c9810c9138c47b94429912c96c37244962667e9ad3a5e1ae7ec8bbe8bd4ab",
+          "sha256": "a3581cdebd5b31d8ab930b3321564880d522ace06992ba052b42dfbaa46bc935",
+          "sha1": "f5a4e50fcafae17cc5dec85654cfa99680a2f97c",
+          "md5": "8146a3b82579a8e4cb1aeeb188a3185d"
         }
       ]
     },
@@ -260,10 +260,10 @@
           "name": "sdk-iosarm64-1.0.0-metadata.jar",
           "url": "sdk-iosarm64-1.0.0-metadata.jar",
           "size": 261,
-          "sha512": "eea9b2dc3e903f572407873228d7eb67a19636ecfdde0f04ffbc272c2404f940b9f9c7a6eef3abe96a94ab92823b8da554db3603c60a116eebf2e0ac38fca380",
-          "sha256": "fc489d9779beb2147a53fd3f34911d9ec2619d5f5d9d9381aef09eb0bd91a4cd",
-          "sha1": "0f8c229be3bdab2738050b5392669ce5f1d5a1bf",
-          "md5": "1a7a629e3afa07b95307ca352f8c2d84"
+          "sha512": "596371f732b7e0d0071827a2384fb1dde79d074455558b28979d86ab8fc5d21b585ec4ca12592d691c8d065c7a6eed87aa517bd7444e95eb08b706f021eedaaf",
+          "sha256": "f7b5bc9c1a3b8f5d0c4f6c5f441880d6972055b98e6903350eaab125289150ff",
+          "sha1": "0a5c2f0a06efc8d287a05c12d3c20efd442f3022",
+          "md5": "5dec7fc82aa0a381e39763e1a1c7f66c"
         }
       ]
     }

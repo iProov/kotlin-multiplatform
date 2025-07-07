@@ -36,11 +36,11 @@
         {
           "name": "sdk-release.aar",
           "url": "sdk-android-1.0.0.aar",
-          "size": 2476,
-          "sha512": "23c712d5d256a462b2af064e3d70c7b04d90be7791ef159031185688d6e44894aff3e5aba5cd5a7d47fee5eff8c4e58dc4936ced03d3c836dfe82abd31c78a47",
-          "sha256": "c03d5700d43966d68019e30b1946818a67ee72fad9e3dae39e9ec84f0fb79cd1",
-          "sha1": "667a79855e4a53f5bdd7a0486f78586ba5e45d17",
-          "md5": "03425a17e618699d69c8f8370e79f558"
+          "size": 85725,
+          "sha512": "a6d8abaef8f88802af982b127a8b05e472d8771a9f83b01803313dc5922f0ba187786cff48b6a0768fc0b9f9a0e9c940090aa35349653eca9b13d08a8037a1b1",
+          "sha256": "f6e1c852f6b896abc826dd82c0340b05a7ac2ed820255cf3ccbf373d28ce8f17",
+          "sha1": "b696946400f9bf9aa86521566ca58875ab20dbea",
+          "md5": "addecd9d3bfe129dffda3b4287b012f7"
         }
       ]
     },
@@ -268,11 +268,11 @@
         {
           "name": "sdk-release.aar",
           "url": "sdk-android-1.0.0.aar",
-          "size": 2476,
-          "sha512": "23c712d5d256a462b2af064e3d70c7b04d90be7791ef159031185688d6e44894aff3e5aba5cd5a7d47fee5eff8c4e58dc4936ced03d3c836dfe82abd31c78a47",
-          "sha256": "c03d5700d43966d68019e30b1946818a67ee72fad9e3dae39e9ec84f0fb79cd1",
-          "sha1": "667a79855e4a53f5bdd7a0486f78586ba5e45d17",
-          "md5": "03425a17e618699d69c8f8370e79f558"
+          "size": 85725,
+          "sha512": "a6d8abaef8f88802af982b127a8b05e472d8771a9f83b01803313dc5922f0ba187786cff48b6a0768fc0b9f9a0e9c940090aa35349653eca9b13d08a8037a1b1",
+          "sha256": "f6e1c852f6b896abc826dd82c0340b05a7ac2ed820255cf3ccbf373d28ce8f17",
+          "sha1": "b696946400f9bf9aa86521566ca58875ab20dbea",
+          "md5": "addecd9d3bfe129dffda3b4287b012f7"
         }
       ]
     },
