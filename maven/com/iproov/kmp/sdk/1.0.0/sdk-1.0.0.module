@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "8.7"
+      "version": "8.12"
     }
   },
   "variants": [
@@ -33,7 +33,7 @@
       ],
       "files": [
         {
-          "name": "sdk-metadata-1.0.0.jar",
+          "name": "sdk-1.0.0.jar",
           "url": "sdk-1.0.0.jar",
           "size": 9310,
           "sha512": "472dfbcc67adf20901545d5b711314b224c9eb56d357b8e281724fdedf079213bb8a514c1a283315f720ef6c4b5f941fa6883de71ff5a48a6ca0acd7a8414aaf",
@@ -55,7 +55,7 @@
       },
       "files": [
         {
-          "name": "sdk-kotlin-1.0.0-sources.jar",
+          "name": "sdk-1.0.0-sources.jar",
           "url": "sdk-1.0.0-sources.jar",
           "size": 6550,
           "sha512": "7ef2284bb411f106abaf77c4de7ce4c03fdb36cd241ef6a233cc5c1a93e8ddd82a252301737527893df331896571814e795cc5cf6c22d6ce4c9c6a3d4d1779e3",

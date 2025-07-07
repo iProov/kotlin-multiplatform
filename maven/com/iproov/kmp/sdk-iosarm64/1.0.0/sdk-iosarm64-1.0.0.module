@@ -11,7 +11,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "8.7"
+      "version": "8.12"
     }
   },
   "variants": [
@@ -80,20 +80,20 @@
         {
           "name": "sdk-iosArm64Main-1.0.0.klib",
           "url": "sdk-iosarm64-1.0.0.klib",
-          "size": 72997,
-          "sha512": "c06c04b3e50d24acbc11d2b45cc95c978f2e9fed9d9f1ca8502898cc99f6aeb6e0be4b76127df442aa4bec4558e02bf1b09e312076dcbe2be1a5b4496744ed89",
-          "sha256": "b9dbeebd14015c74e88fedaaa5b04b6371befd3556960824809e927fdace7cb3",
-          "sha1": "1f7b4dc2c1674cb82b303bd7fe66a2bdec0d1830",
-          "md5": "0150caa5eb636ff76a66fa9b6d5262b1"
+          "size": 73012,
+          "sha512": "7cdfb835386851052c4cdf3cac69ec6b574efb5f069a6f20b455857ba43536c705717454aa77f68d74271862f60291b6940215786ab5670ed9359c527b144051",
+          "sha256": "f6280b2e6ade6fbc8ba0adf9a13615203ea087ce1b9ea1ef32997273489e8cce",
+          "sha1": "ae1c4bfa9738aefeaee35141997b3478fb882a8b",
+          "md5": "9f5a040dc1330aeb9b332ca38dea1373"
         },
         {
           "name": "sdk-iosArm64Cinterop-iproovMain-1.0.0.klib",
           "url": "sdk-iosarm64-1.0.0-cinterop-iproov.klib",
           "size": 100098,
-          "sha512": "09953b16149cde0a1afdc3b52db67053371d94592d599f20371a9ec0caad50405d5a4413a255ee8fcb084276c2248fc408b1920ae89f0eb59e841f62afbfed7b",
-          "sha256": "10a0d4de818d592be5cc088a5cababc0af3dfbe1abe9995f27cb911e7c2dedb3",
-          "sha1": "90adb155ac8d61ff1dfde2d6601935b06a7bf922",
-          "md5": "e560857e4f98514325c361a7e26fe3a1"
+          "sha512": "19ea0836f225aec15750a332f64e74a4791b8978dc61a6fbc84e81f6ad1ddda1571f81022306092bddabe1766818cc03d65145dac307a4bd0a543b43661d678e",
+          "sha256": "3e8c5308a18a6447cac64d239405a7dc232bc637d745b85ecfbf00f66e5f9c3d",
+          "sha1": "5b10aaeef9f5101dd78dfbf6064e318896f4b010",
+          "md5": "1c16b3576beb7b6cc9d04ae500411a57"
         }
       ]
     },
@@ -187,10 +187,10 @@
           "name": "sdk-1.0.0.kotlin_resources.zip",
           "url": "sdk-iosarm64-1.0.0-kotlin_resources.kotlin_resources.zip",
           "size": 324,
-          "sha512": "16c5d207a0d43495ea17e43e0521e38d84e8f8ea670ad507fd9a838596172bb169f27e70f7698a751c68487e9482491ebd83d7671f38c96e547e6581a204148a",
-          "sha256": "eca30e90fd586f96c707004bcd7cdd80d0f96308287c0c6d4346afb24727b3d1",
-          "sha1": "31a182552dc5b6f138cbb90799fef266c0c9630f",
-          "md5": "9d6af4172f43d4a133b8d929efd46fc7"
+          "sha512": "ad7fd0e3de30c1cc3a3e6001d4b0783d6f494250448dbfec8742a29bbb3c0330c67b845aa01c1e5e9bfd99c9abbd88951a3bb673bacaefe8b62754a2f16d207f",
+          "sha256": "b7585ee1753e1402529aebbc14767d2032f032773cc26e4bba0545398244ac23",
+          "sha1": "0f09bbf68f2f6fa4cdf85d98ed3f7b3db736eeaf",
+          "md5": "811ee78619cad0d63ee74bc498567a63"
         }
       ]
     },
@@ -260,10 +260,10 @@
           "name": "sdk-iosarm64-1.0.0-metadata.jar",
           "url": "sdk-iosarm64-1.0.0-metadata.jar",
           "size": 261,
-          "sha512": "7e4c92dc9d61c433a7eedff4d6628e96792daf722292d0609aeffbc236dab1bb498c40e192b78c851e9c3f3097a4aa20bf17547be5c65469bbdc3ab82970ed9f",
-          "sha256": "261b7bf2b5741f61bd9aeafa2c87631ce90da22f9be53a66a936621f52b48b5b",
-          "sha1": "26b5929aaf4566cece583fa406facab475d2014a",
-          "md5": "39dd597ccba28313c6e2467dc43f2ca3"
+          "sha512": "eea9b2dc3e903f572407873228d7eb67a19636ecfdde0f04ffbc272c2404f940b9f9c7a6eef3abe96a94ab92823b8da554db3603c60a116eebf2e0ac38fca380",
+          "sha256": "fc489d9779beb2147a53fd3f34911d9ec2619d5f5d9d9381aef09eb0bd91a4cd",
+          "sha1": "0f8c229be3bdab2738050b5392669ce5f1d5a1bf",
+          "md5": "1a7a629e3afa07b95307ca352f8c2d84"
         }
       ]
     }
