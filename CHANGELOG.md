@@ -1,5 +1,14 @@
 # iProov Biometrics Kotlin-Multiplatform SDK
 
+## 1.0.1
+
+iProov Biometrics Kotlin-Multiplatform SDK v1.0.1 includes the following:
+
+### iOS
+
+* SDK version [v12.4.1](https://github.com/iProov/ios/releases/tag/12.4.1).
+
+
 ## 1.0.0
 
 iProov Biometrics Kotlin-Multiplatform SDK v1.0.0 includes the following:

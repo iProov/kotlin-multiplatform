@@ -2,17 +2,18 @@
 
 package com.iproov.kmp.api
 
+import com.iproov.kmp.mapper.convertUIImageToByteArray
+import com.iproov.kmp.mapper.toIproov
 import com.iproov.sdk.IPErrorCode
 import com.iproov.sdk.IPSession
 import com.iproov.sdk.IProov
 import com.iproov.sdk.buildNumber
 import com.iproov.sdk.launchWithStreamingURL
 import com.iproov.sdk.versionStr
-import com.iproov.kmp.mapper.convertUIImageToByteArray
-import com.iproov.kmp.mapper.toIproov
 import kotlinx.cinterop.ExperimentalForeignApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import platform.Foundation.NSURL
+import platform.Foundation.NSUserDefaults
 
 
 @OptIn(ExperimentalForeignApi::class)
@@ -25,8 +26,11 @@ actual object Iproov {
 
     private var session: IPSession? = null
 
-    actual suspend fun launchSession(baseUrl: String, token: String, iproovOptions: IproovOptions) {
+    init {
+        setEnvironment()
+    }
 
+    actual suspend fun launchSession(baseUrl: String, token: String, iproovOptions: IproovOptions) {
         val url = NSURL(string = baseUrl)
         val options = iproovOptions.toIproov()
 
@@ -76,5 +80,10 @@ actual object Iproov {
 
     actual suspend fun cancelSession() {
         session?.cancel()
+    }
+
+    private fun setEnvironment() {
+        val userDefaults = NSUserDefaults(suiteName = "iproov_environment_prefs")
+        userDefaults.setObject("kotlin_multiplatform", "environment")
     }
 }

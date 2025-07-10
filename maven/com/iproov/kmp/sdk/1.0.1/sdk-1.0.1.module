@@ -3,7 +3,7 @@
   "component": {
     "group": "com.iproov.kmp",
     "module": "sdk",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -33,8 +33,8 @@
       ],
       "files": [
         {
-          "name": "sdk-1.0.0.jar",
-          "url": "sdk-1.0.0.jar",
+          "name": "sdk-1.0.1.jar",
+          "url": "sdk-1.0.1.jar",
           "size": 9310,
           "sha512": "472dfbcc67adf20901545d5b711314b224c9eb56d357b8e281724fdedf079213bb8a514c1a283315f720ef6c4b5f941fa6883de71ff5a48a6ca0acd7a8414aaf",
           "sha256": "5ec02aa10e0e637562785d000ee085a719959a767f9c6f716209ba764c0eccc4",
@@ -55,8 +55,8 @@
       },
       "files": [
         {
-          "name": "sdk-1.0.0-sources.jar",
-          "url": "sdk-1.0.0-sources.jar",
+          "name": "sdk-1.0.1-sources.jar",
+          "url": "sdk-1.0.1-sources.jar",
           "size": 6550,
           "sha512": "7ef2284bb411f106abaf77c4de7ce4c03fdb36cd241ef6a233cc5c1a93e8ddd82a252301737527893df331896571814e795cc5cf6c22d6ce4c9c6a3d4d1779e3",
           "sha256": "f4a798592294caa389d7620bfe61041c2d398d020ebbb7834705592a0e24cdad",
@@ -75,10 +75,10 @@
         "org.jetbrains.kotlin.platform.type": "androidJvm"
       },
       "available-at": {
-        "url": "../../sdk-android-debug/1.0.0/sdk-android-debug-1.0.0.module",
+        "url": "../../sdk-android-debug/1.0.1/sdk-android-debug-1.0.1.module",
         "group": "com.iproov.kmp",
         "module": "sdk-android-debug",
-        "version": "1.0.0"
+        "version": "1.0.1"
       }
     },
     {
@@ -91,10 +91,10 @@
         "org.jetbrains.kotlin.platform.type": "androidJvm"
       },
       "available-at": {
-        "url": "../../sdk-android-debug/1.0.0/sdk-android-debug-1.0.0.module",
+        "url": "../../sdk-android-debug/1.0.1/sdk-android-debug-1.0.1.module",
         "group": "com.iproov.kmp",
         "module": "sdk-android-debug",
-        "version": "1.0.0"
+        "version": "1.0.1"
       }
     },
     {
@@ -110,10 +110,10 @@
         "org.jetbrains.kotlin.platform.type": "androidJvm"
       },
       "available-at": {
-        "url": "../../sdk-android-debug/1.0.0/sdk-android-debug-1.0.0.module",
+        "url": "../../sdk-android-debug/1.0.1/sdk-android-debug-1.0.1.module",
         "group": "com.iproov.kmp",
         "module": "sdk-android-debug",
-        "version": "1.0.0"
+        "version": "1.0.1"
       }
     },
     {
@@ -125,10 +125,10 @@
         "org.jetbrains.kotlin.platform.type": "androidJvm"
       },
       "available-at": {
-        "url": "../../sdk-android/1.0.0/sdk-android-1.0.0.module",
+        "url": "../../sdk-android/1.0.1/sdk-android-1.0.1.module",
         "group": "com.iproov.kmp",
         "module": "sdk-android",
-        "version": "1.0.0"
+        "version": "1.0.1"
       }
     },
     {
@@ -140,10 +140,10 @@
         "org.jetbrains.kotlin.platform.type": "androidJvm"
       },
       "available-at": {
-        "url": "../../sdk-android/1.0.0/sdk-android-1.0.0.module",
+        "url": "../../sdk-android/1.0.1/sdk-android-1.0.1.module",
         "group": "com.iproov.kmp",
         "module": "sdk-android",
-        "version": "1.0.0"
+        "version": "1.0.1"
       }
     },
     {
@@ -158,10 +158,10 @@
         "org.jetbrains.kotlin.platform.type": "androidJvm"
       },
       "available-at": {
-        "url": "../../sdk-android/1.0.0/sdk-android-1.0.0.module",
+        "url": "../../sdk-android/1.0.1/sdk-android-1.0.1.module",
         "group": "com.iproov.kmp",
         "module": "sdk-android",
-        "version": "1.0.0"
+        "version": "1.0.1"
       }
     },
     {
@@ -175,10 +175,10 @@
         "org.jetbrains.kotlin.platform.type": "native"
       },
       "available-at": {
-        "url": "../../sdk-iosarm64/1.0.0/sdk-iosarm64-1.0.0.module",
+        "url": "../../sdk-iosarm64/1.0.1/sdk-iosarm64-1.0.1.module",
         "group": "com.iproov.kmp",
         "module": "sdk-iosarm64",
-        "version": "1.0.0"
+        "version": "1.0.1"
       }
     },
     {
@@ -193,10 +193,10 @@
         "org.jetbrains.kotlin.platform.type": "native"
       },
       "available-at": {
-        "url": "../../sdk-iosarm64/1.0.0/sdk-iosarm64-1.0.0.module",
+        "url": "../../sdk-iosarm64/1.0.1/sdk-iosarm64-1.0.1.module",
         "group": "com.iproov.kmp",
         "module": "sdk-iosarm64",
-        "version": "1.0.0"
+        "version": "1.0.1"
       }
     },
     {
@@ -211,10 +211,10 @@
         "org.jetbrains.kotlin.platform.type": "native"
       },
       "available-at": {
-        "url": "../../sdk-iosarm64/1.0.0/sdk-iosarm64-1.0.0.module",
+        "url": "../../sdk-iosarm64/1.0.1/sdk-iosarm64-1.0.1.module",
         "group": "com.iproov.kmp",
         "module": "sdk-iosarm64",
-        "version": "1.0.0"
+        "version": "1.0.1"
       }
     },
     {
@@ -228,10 +228,10 @@
         "org.jetbrains.kotlin.platform.type": "native"
       },
       "available-at": {
-        "url": "../../sdk-iosarm64/1.0.0/sdk-iosarm64-1.0.0.module",
+        "url": "../../sdk-iosarm64/1.0.1/sdk-iosarm64-1.0.1.module",
         "group": "com.iproov.kmp",
         "module": "sdk-iosarm64",
-        "version": "1.0.0"
+        "version": "1.0.1"
       }
     }
   ]

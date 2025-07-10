@@ -72,6 +72,8 @@ class ClaimViewModel : ViewModel() {
         _iProovState.value = null
     }
 
+    fun sdkVersion(): String = Iproov.sdkVersion
+
     private fun collectIproovState() {
         viewModelScope.launch {
             Iproov.sessionState.collect {

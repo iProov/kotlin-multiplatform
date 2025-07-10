@@ -10,7 +10,7 @@ kotlin = "2.1.21"
 ktor = "2.3.12"
 startup-runtime = "1.2.0"
 iproov-android = "10.3.2"
-iproov-sdk-version = "1.0.0"
+iproov-sdk-version = "1.0.1"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }

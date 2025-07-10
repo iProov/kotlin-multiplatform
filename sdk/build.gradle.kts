@@ -75,7 +75,7 @@ android {
     }
     buildTypes {
         getByName("release") {
-            isMinifyEnabled = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
     compileOptions {
@@ -87,11 +87,10 @@ android {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            pom {
-                name.set("iProov KMP")
-                description.set("A KMP wrapper for the native iProov SDK.")
-                url.set("https://github.com/iProov/kotlin-multiplatform")  // kmp wrapper repo url
-            }
+            groupId = "com.iproov.kmp"
+            artifactId = "sdk"
+            version = version.toString()
+            from(components["kotlin"])
         }
     }
 }

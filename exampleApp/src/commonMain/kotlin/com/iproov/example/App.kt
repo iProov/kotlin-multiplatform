@@ -119,6 +119,8 @@ fun App() {
                 }) {
                 Text("Verify with Genuine Presence")
             }
+
+            Text("Native SDK version: ${viewModel.sdkVersion()}")
         }
     }
 }

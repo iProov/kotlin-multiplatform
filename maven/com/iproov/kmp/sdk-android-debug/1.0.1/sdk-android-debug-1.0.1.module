@@ -1,10 +1,10 @@
 {
   "formatVersion": "1.1",
   "component": {
-    "url": "../../sdk/1.0.0/sdk-1.0.0.module",
+    "url": "../../sdk/1.0.1/sdk-1.0.1.module",
     "group": "com.iproov.kmp",
     "module": "sdk",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -16,8 +16,9 @@
   },
   "variants": [
     {
-      "name": "releaseApiElements-published",
+      "name": "debugApiElements-published",
       "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
         "org.gradle.category": "library",
         "org.gradle.jvm.environment": "android",
         "org.gradle.usage": "java-api",
@@ -34,19 +35,20 @@
       ],
       "files": [
         {
-          "name": "sdk-release.aar",
-          "url": "sdk-android-1.0.0.aar",
-          "size": 85725,
-          "sha512": "a6d8abaef8f88802af982b127a8b05e472d8771a9f83b01803313dc5922f0ba187786cff48b6a0768fc0b9f9a0e9c940090aa35349653eca9b13d08a8037a1b1",
-          "sha256": "f6e1c852f6b896abc826dd82c0340b05a7ac2ed820255cf3ccbf373d28ce8f17",
-          "sha1": "b696946400f9bf9aa86521566ca58875ab20dbea",
-          "md5": "addecd9d3bfe129dffda3b4287b012f7"
+          "name": "sdk-debug.aar",
+          "url": "sdk-android-debug-1.0.1.aar",
+          "size": 89173,
+          "sha512": "e5871f9a94f99bed15d7795f2ed996fda29dcca58ee41fbe27c69fcaea7b29145a6c11e7a18bf740829664cb6c58f3343a04758327f32d0a95143a32c8999dbe",
+          "sha256": "65af56bd2a12bd0a5b64515222fbc13a8075617a323906e3bb1090f94fbbba1b",
+          "sha1": "622c22908d68af59444d92861bd408874620cc71",
+          "md5": "551f426157722f1289d6f7521b359769"
         }
       ]
     },
     {
-      "name": "releaseRuntimeElements-published",
+      "name": "debugRuntimeElements-published",
       "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
         "org.gradle.category": "library",
         "org.gradle.jvm.environment": "android",
         "org.gradle.usage": "java-runtime",
@@ -266,19 +268,20 @@
       ],
       "files": [
         {
-          "name": "sdk-release.aar",
-          "url": "sdk-android-1.0.0.aar",
-          "size": 85725,
-          "sha512": "a6d8abaef8f88802af982b127a8b05e472d8771a9f83b01803313dc5922f0ba187786cff48b6a0768fc0b9f9a0e9c940090aa35349653eca9b13d08a8037a1b1",
-          "sha256": "f6e1c852f6b896abc826dd82c0340b05a7ac2ed820255cf3ccbf373d28ce8f17",
-          "sha1": "b696946400f9bf9aa86521566ca58875ab20dbea",
-          "md5": "addecd9d3bfe129dffda3b4287b012f7"
+          "name": "sdk-debug.aar",
+          "url": "sdk-android-debug-1.0.1.aar",
+          "size": 89173,
+          "sha512": "e5871f9a94f99bed15d7795f2ed996fda29dcca58ee41fbe27c69fcaea7b29145a6c11e7a18bf740829664cb6c58f3343a04758327f32d0a95143a32c8999dbe",
+          "sha256": "65af56bd2a12bd0a5b64515222fbc13a8075617a323906e3bb1090f94fbbba1b",
+          "sha1": "622c22908d68af59444d92861bd408874620cc71",
+          "md5": "551f426157722f1289d6f7521b359769"
         }
       ]
     },
     {
-      "name": "releaseSourcesElements-published",
+      "name": "debugSourcesElements-published",
       "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
         "org.gradle.category": "documentation",
         "org.gradle.dependency.bundling": "external",
         "org.gradle.docstype": "sources",
@@ -289,8 +292,8 @@
       },
       "files": [
         {
-          "name": "sdk-android-1.0.0-sources.jar",
-          "url": "sdk-android-1.0.0-sources.jar",
+          "name": "sdk-android-debug-1.0.1-sources.jar",
+          "url": "sdk-android-debug-1.0.1-sources.jar",
           "size": 10960,
           "sha512": "d6308dc1af5f83ff2f414458e6f7fd37194886f754fff2d04d547ce79ca2a3803242637e72d1e5b8128b0f7bd95975e605fb557a1972ff5b47b5bcb09d6b9e25",
           "sha256": "db1a83bbf5e51eb935cdbe17d02ce295c0ca59bc164bdf03a68337664b098147",

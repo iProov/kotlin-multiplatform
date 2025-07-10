@@ -1,13 +1,13 @@
 {
-  "originHash" : "675e3f7a0b40d802228efee2c61f7690381d3887980f14cc875323130a7e9288",
+  "originHash" : "c16002f4fab6526ca4f3bc9cb5e1041e082bf4845e5c508494a4de768d6f98a8",
   "pins" : [
     {
-      "identity" : "ios",
+      "identity" : "ios-spm",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/iProov/ios",
+      "location" : "https://github.com/iProov/ios-spm",
       "state" : {
-        "revision" : "439f95236951ae4878b463ab614318510bee77e0",
-        "version" : "12.3.1"
+        "revision" : "c46151701e173f30bb2666774f828b85b5312fb2",
+        "version" : "12.4.1"
       }
     }
   ],
