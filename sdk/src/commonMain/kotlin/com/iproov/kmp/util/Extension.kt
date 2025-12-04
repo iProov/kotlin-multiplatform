@@ -7,3 +7,9 @@ inline val String.endingWithSlash: String
 
 inline val String.saferUrl: String
     get() = if (endingWithSlash.endsWith("api/v2/")) endingWithSlash else "${endingWithSlash}api/v2/"
+
+inline fun <T> T?.assignIfNotNull(action: (T) -> Unit) {
+    if (this != null) {
+        action(this)
+    }
+}

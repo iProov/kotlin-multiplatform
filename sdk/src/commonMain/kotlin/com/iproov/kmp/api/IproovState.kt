@@ -7,9 +7,13 @@ data class SuccessResult(
     val frame: ByteArray?,
 )
 
-data class FailureResult(
-    val reason: String,
+data class FailureReason(
     val feedbackCode: String,
+    val description: String
+)
+
+data class FailureResult(
+    val reasons: List<FailureReason>,
     val frame: ByteArray?,
 )
 
@@ -39,5 +43,15 @@ sealed class IproovState(val isFinal: Boolean) {
 
     override fun toString(): String {
         return "IProovState [${this::class.simpleName}]"
+    }
+}
+
+sealed class IproovUIState {
+    object NotStarted : IproovUIState()
+    object Started : IproovUIState()
+    object Ended : IproovUIState()
+
+    override fun toString(): String {
+        return "IProovUIState [${this::class.simpleName}]"
     }
 }

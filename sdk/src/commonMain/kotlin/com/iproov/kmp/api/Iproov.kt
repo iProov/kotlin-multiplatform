@@ -9,6 +9,7 @@ expect object Iproov {
     val buildNumber: String
 
     val sessionState: MutableStateFlow<IproovState?>
+    val uiState: MutableStateFlow<IproovUIState?>
 
     suspend fun launchSession(baseUrl: String, token: String, iproovOptions: IproovOptions)
     suspend fun cancelSession()

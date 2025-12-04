@@ -25,8 +25,6 @@ class MultiWindowUnsupportedException(title: String) : IProovException(title)
 
 class CameraException(title: String, message: String?) : IProovException(title, message)
 
-class FaceDetectorException(title: String, message: String?) : IProovException(title, message)
-
 class UnsupportedDeviceException(title: String) : IProovException(title)
 
 class InvalidOptionsException(title: String) : IProovException(title)

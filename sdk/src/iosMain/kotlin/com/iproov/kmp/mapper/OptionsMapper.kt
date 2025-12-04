@@ -2,6 +2,10 @@
 
 package com.iproov.kmp.mapper
 
+import com.iproov.kmp.api.IproovOptions
+import com.iproov.kmp.api.LineDrawingStyle
+import com.iproov.kmp.api.NaturalStyle
+import com.iproov.kmp.util.assignIfNotNull
 import com.iproov.sdk.IPFilterProtocol
 import com.iproov.sdk.IPGenuinePresenceAssuranceOptions
 import com.iproov.sdk.IPLineDrawingFilter
@@ -15,65 +19,61 @@ import com.iproov.sdk.IPNaturalFilterStyle
 import com.iproov.sdk.IPNaturalFilterStyleBlur
 import com.iproov.sdk.IPNaturalFilterStyleClear
 import com.iproov.sdk.IPOptions
-import com.iproov.kmp.api.IproovOptions
-import com.iproov.kmp.api.LineDrawingStyle
-import com.iproov.kmp.api.NaturalStyle
 import kotlinx.cinterop.ExperimentalForeignApi
 
 @OptIn(ExperimentalForeignApi::class)
 fun IproovOptions.toIproov(): IPOptions {
     val iosOptions = IPOptions()
 
-    iosOptions.setTitle(this.title)
-    iosOptions.setTitleTextColor(this.titleTextColor.toUIColor())
-    iosOptions.setHeaderBackgroundColor(this.headerBackgroundColor.toUIColor())
+    this.title.assignIfNotNull { iosOptions.setTitle(it) }
+    this.titleTextColor.assignIfNotNull { iosOptions.setTitleTextColor(it.toUIColor()) }
+    this.headerBackgroundColor.assignIfNotNull { iosOptions.setHeaderBackgroundColor(it.toUIColor()) }
 
-    iosOptions.setFilter(this.filter.toIproov())
+    this.filter.assignIfNotNull { iosOptions.setFilter(it.toIproov()) }
 
-    iosOptions.setPromptTextColor(this.promptTextColor.toUIColor())
-    iosOptions.setPromptBackgroundColor(this.promptBackgroundColor.toUIColor())
-    iosOptions.setPromptRoundedCorners(this.promptRoundedCorners)
+    this.promptTextColor.assignIfNotNull { iosOptions.setPromptTextColor(it.toUIColor()) }
+    this.promptBackgroundColor.assignIfNotNull { iosOptions.setPromptBackgroundColor(it.toUIColor()) }
+    this.promptRoundedCorners.assignIfNotNull { iosOptions.setPromptRoundedCorners(it) }
 
-    iosOptions.setDisableExteriorEffects(this.disableExteriorEffects)
+    this.disableExteriorEffects.assignIfNotNull { iosOptions.setDisableExteriorEffects(it) }
 
-    iosOptions.setTimeout(this.timeoutSecs.toDouble())
+    this.timeoutSecs.assignIfNotNull { iosOptions.setTimeout(it.toDouble()) }
 
-    iosOptions.setSurroundColor(this.surroundColor.toUIColor())
+    this.surroundColor.assignIfNotNull { iosOptions.setSurroundColor(it.toUIColor()) }
+    this.certificates.assignIfNotNull { iosOptions.setCertificates(it.map { it.spki }) }
 
-    iosOptions.setCertificates(this.certificates.map { it.spki })
+    this.logo.assignIfNotNull { iosOptions.setLogoImage(byteArrayToUIImage(it)) }
 
-    if (this.logo != null)
-        iosOptions.setLogoImage(byteArrayToUIImage(this.logo!!))
-
-    if (this.fontPath != null)
-        iosOptions.setFont(this.fontPath!!)
+    this.fontPath.assignIfNotNull { iosOptions.setFont(it) }
 
     // Close button ----
-    iosOptions.setCloseButtonTintColor(this.closeButton.colorTint.toUIColor())
-    if (this.closeButton.icon != null)
-        iosOptions.setCloseButtonImage(byteArrayToUIImage(this.closeButton.icon!!)!!)
+    this.closeButton.assignIfNotNull { cb ->
+        cb.colorTint.assignIfNotNull { iosOptions.setCloseButtonTintColor(it.toUIColor()) }
+        cb.icon.assignIfNotNull { iosOptions.setCloseButtonImage(byteArrayToUIImage(it)!!) }
+    }
 
     // GPA ----
-    val ipGenuinePresenceAssuranceOptions = this.genuinePresenceAssurance.readyOvalStrokeColor.toUIColor()
-    val ipNotReadyOvalStrokeColor = this.genuinePresenceAssurance.notReadyOvalStrokeColor.toUIColor()
-    val scanningPrompts = this.genuinePresenceAssurance.scanningPrompts
-    iosOptions.setGenuinePresenceAssurance(
-        IPGenuinePresenceAssuranceOptions().apply {
-            setReadyOvalStrokeColor(ipGenuinePresenceAssuranceOptions)
-            setNotReadyOvalStrokeColor(ipNotReadyOvalStrokeColor)
-            setScanningPrompts(scanningPrompts)
-        }
-    )
+    this.genuinePresenceAssurance.assignIfNotNull { gpa ->
+        iosOptions.setGenuinePresenceAssurance(
+            IPGenuinePresenceAssuranceOptions().apply {
+                gpa.readyOvalStrokeColor.assignIfNotNull { setReadyOvalStrokeColor(it.toUIColor()) }
+                gpa.notReadyOvalStrokeColor.assignIfNotNull { setNotReadyOvalStrokeColor(it.toUIColor()) }
+                gpa.scanningPrompts.assignIfNotNull { setScanningPrompts(it) }
+                gpa.controlXPosition.assignIfNotNull { setControlXPosition(it) }
+                gpa.controlYPosition.assignIfNotNull { setControlYPosition(it) }
+            }
+        )
+    }
 
     // LA ----
-    val ipOvalStrokeColor = this.livenessAssurance.ovalStrokeColor.toUIColor()
-    val ipCompletedOvalStrokeColor = this.livenessAssurance.completedOvalStrokeColor.toUIColor()
-    iosOptions.setLivenessAssurance(
-        IPLivenessAssuranceOptions().apply {
-            setOvalStrokeColor(ipOvalStrokeColor)
-            setCompletedOvalStrokeColor(ipCompletedOvalStrokeColor)
-        }
-    )
+    this.livenessAssurance.assignIfNotNull { la ->
+        iosOptions.setLivenessAssurance(
+            IPLivenessAssuranceOptions().apply {
+                la.ovalStrokeColor.assignIfNotNull { setOvalStrokeColor(it.toUIColor()) }
+                la.completedOvalStrokeColor.assignIfNotNull { setCompletedOvalStrokeColor(it.toUIColor()) }
+            }
+        )
+    }
 
     return iosOptions
 }
@@ -81,17 +81,16 @@ fun IproovOptions.toIproov(): IPOptions {
 @OptIn(ExperimentalForeignApi::class)
 fun IproovOptions.Filter.toIproov(): IPFilterProtocol {
     return when (val kmpFilter = this) {
-        is IproovOptions.Filter.LineDrawingFilter ->
-            IPLineDrawingFilter(
-                style = kmpFilter.style.toIproov(),
-                foregroundColor = kmpFilter.foregroundColor.toUIColor(),
-                backgroundColor = kmpFilter.backgroundColor.toUIColor()
-            )
+        is IproovOptions.Filter.LineDrawingFilter -> IPLineDrawingFilter().apply {
+            kmpFilter.style.assignIfNotNull { setStyle(it.toIproov()) }
+            kmpFilter.foregroundColor.assignIfNotNull { setForegroundColor(it.toUIColor()) }
+            kmpFilter.backgroundColor.assignIfNotNull { setBackgroundColor(it.toUIColor()) }
+        }
 
         is IproovOptions.Filter.NaturalFilter ->
-            IPNaturalFilter(
-                style = kmpFilter.style.toIproov()
-            )
+            IPNaturalFilter().apply {
+                kmpFilter.style.assignIfNotNull { setStyle(it.toIproov()) }
+            }
     }
 }
 

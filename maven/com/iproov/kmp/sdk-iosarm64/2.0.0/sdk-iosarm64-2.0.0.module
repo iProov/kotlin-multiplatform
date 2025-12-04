@@ -1,0 +1,271 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../sdk/2.0.0/sdk-2.0.0.module",
+    "group": "com.iproov.kmp",
+    "module": "sdk",
+    "version": "2.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.6.11"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.6.11"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "2.3.12"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-iosArm64Main-2.0.0.klib",
+          "url": "sdk-iosarm64-2.0.0.klib",
+          "size": 75733,
+          "sha512": "dd0a386db815c38238ae99d69131970f67602ce08b61a8ee5c9a1411277b890f309057497b916187ba57480e5c115a0f7a81b94e2116414f643f84e1883a4604",
+          "sha256": "fbff1419d77eff5e8423b7983915a92fe74124183fe0bdebe86b784abf669092",
+          "sha1": "8ec51f5763c7bcaa4e3ca104ed04dd43ac56c26a",
+          "md5": "038e9381119c98f9cae4e6500681ab80"
+        },
+        {
+          "name": "sdk-iosArm64Cinterop-iproovMain-2.0.0.klib",
+          "url": "sdk-iosarm64-2.0.0-cinterop-iproov.klib",
+          "size": 90992,
+          "sha512": "108890abcfdfa2f45a973817ee7c72792c10b2fe3beb20890a0a6866ea56a10094ed414f12782c07b5834995453be9999714f2f4abafb2edb901fee291a37baf",
+          "sha256": "2c562c6a3c94a3a3647e30caa33e4bfa6aa00e3acea51c7f2eb695c0b7411ea0",
+          "sha1": "830c1e0d36b6b69f598eb367423b5cee7a6e587b",
+          "md5": "84a4890eb882588c301a7de0242a19d7"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "sdk-iosarm64-2.0.0-sources.jar",
+          "url": "sdk-iosarm64-2.0.0-sources.jar",
+          "size": 9972,
+          "sha512": "d161551490e5657736529a4c25f1b8c144344467bc3dbf38a8513ef54458ff6a5769cae6b1287d9d4253366a55031a4e9de8821028e6019eb69371ab1bcb19a9",
+          "sha256": "96a0f3222d55e0131f12817959152241f73ef4fd00efb28772653991c9c5655f",
+          "sha1": "07325dad3b025b0c7ea1a6d0561e41616f2c0a39",
+          "md5": "f52d2d4eb1e3382b053a1cb9119a0bdd"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.6.11"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.6.11"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "2.3.12"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-2.0.0.kotlin_resources.zip",
+          "url": "sdk-iosarm64-2.0.0-kotlin_resources.kotlin_resources.zip",
+          "size": 324,
+          "sha512": "c99774aea23fbf59a5c8b07e9200936fcdb1c2d81bf86f1738ba1c6939b048b8c2c280edaeee855c520250ebde656cf0eae2cdfb8b629c58c42f35d6e02faf2a",
+          "sha256": "d95bbcc85d5a728405c832e2105352e9c26e89f224d968ee818b323efea9a954",
+          "sha1": "0be90e55c6651080626d492c9fa2dda6b1688b37",
+          "md5": "bde60e2ffeec6ce5852d7c7ab5453902"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.6.11"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.6.11"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "2.3.12"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-iosarm64-2.0.0-metadata.jar",
+          "url": "sdk-iosarm64-2.0.0-metadata.jar",
+          "size": 261,
+          "sha512": "9a87590409f3273f3d214fd9ceddd433a1a29354f5a9ac3c929b13a3046bf3ee426f6b68a3255edef5bfb4a2ef1bf8559df2f761c90d2b01602537b6c411d15d",
+          "sha256": "3b12ea588df85afa66a81d803a6d2717c735f57465ec2d74cd43f4855113ba4f",
+          "sha1": "8165d457dbef2cd0eb9817b8856051ec870a5f7f",
+          "md5": "c89224ed701be2fa5e13018d0a8574e0"
+        }
+      ]
+    }
+  ]
+}

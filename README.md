@@ -1,16 +1,16 @@
 ![iProov: Flexible authentication for identity assurance](https://github.com/iProov/kotlin-multiplatform/blob/main/banner.jpg)
-# iProov Biometrics Kotlin Multiplatform SDK
+# iProov Face Kotlin Multiplatform SDK
 
 ## Introduction
 
-The iProov Biometrics Kotlin Multiplatform SDK wraps iProov's native [iOS](https://github.com/iProov/ios) (Swift) and [Android](https://github.com/iProov/android) (Java) SDKs behind a Kotlin Multiplatform interface for use from within your Kotlin Multiplatform iOS or Android app.
+The iProov Face Kotlin Multiplatform SDK wraps iProov's native [iOS](https://github.com/iProov/ios) (Swift) and [Android](https://github.com/iProov/android) (Java) SDKs behind a Kotlin Multiplatform interface for use from within your Kotlin Multiplatform iOS or Android app.
 
 We also provide an API Client written in Kotlin Multiplatform to call our [REST API v2](https://eu.rp.secure.iproov.me/docs.html) from the Kotlin Multiplatform Example app, which can be used to request tokens directly from the iProov API (note that this is not a secure way of getting tokens, and should only be used for demo/debugging purposes).
 
 ### Requirements
 
-- Kotlin Multiplatform SDK 2.1.21 and above
-- iOS 13 and above
+- Kotlin Multiplatform SDK 2.2.21 and above
+- iOS 15 and above
 - Android API Level 26 (Android 8 Oreo) and above
 
 ## Repository contents
@@ -57,7 +57,7 @@ The iProov Kotlin Multiplatform SDK is provided via this repository, which conta
 
     ```kotlin
     commonMain.dependencies {
-        implementation('com.iproov.kmp:sdk:1.0.1')
+        implementation('com.iproov.kmp:sdk:2.0.0')
     }
     ```
 
@@ -118,10 +118,10 @@ class IproovViewModel : ViewModel() {
 
                         is IproovState.Failure -> {
                             // The user was not successfully verified/enrolled, as their identity could not be verified,
-                            // or there was another issue with their verification/enrollment. A reason (as a string)
-                            // is provided as to why the claim failed, along with a feedback code from the back-end.
-                            val feedbackCode = state.failureResult.feedbackCode
-                            val reason = state.failureResult.reason
+                           // or there was another issue with their verification/enrollment. A list of reasons is provided to understand why the claim failed, where each reason contains two properties:
+                           // - feedbackCode: A string representation of the feedback code.
+                           // - description: An informative hint for the user to increase their chances of iProoving successfully next time.
+                            val reasons = state.failureResult.reasons
                             val frame = state.failureResult.frame // An optional image containing a single frame of the user, if enabled for your service provider
                         }
 
@@ -153,8 +153,8 @@ class IproovViewModel : ViewModel() {
 
 👉 You should now familiarize yourself with the following resources:
 
--  [iProov Biometrics iOS SDK documentation](https://github.com/iProov/ios)
--  [Android Biometrics Android SDK documentation](https://github.com/iProov/android)
+-  [iProov Face iOS SDK documentation](https://github.com/iProov/ios)
+-  [Android Face Android SDK documentation](https://github.com/iProov/android)
 
 These repositories provide comprehensive documentation about the available customization options and other important details regarding the SDK usage.
 
@@ -180,33 +180,34 @@ For full documentation, please read the respective [iOS](https://github.com/iPro
 
 A summary of the support for the various SDK options in Kotlin Multiplatform is provided below. Any options not set will default to their platform-defined default value.
 
-| Option | Type                                             | iOS | Android |
-|---|--------------------------------------------------|---|---|
+| Option | Type                                           | iOS | Android |
+|---|------------------------------------------------|---|---|
 | `filter` | `Filter` [(See filter options)](#filter-options) | ✅ | ✅ |
-| `titleTextColor` | `Int`                                            | ✅ | ✅ |
-| `promptTextColor` | `Int`                                            | ✅ | ✅ |
-| `closeButtonTintColor` | `Int`                                            | ✅ | ✅ |
-| `closeButtonImage` | `ByteArray?`                                     | ✅ | ✅ |
-| `title` | `String`                                         | ✅ | ✅ |
-| `fontPath` | `String?`                                        | ✅  | ✅ |
-| `logoImage` | `ByteArray?`                                     | ✅ | ✅ |
-| `promptBackgroundColor` | `Int`                                            | ✅ | ✅ |
-| `promptRoundedCorners` | `Boolean`                                        | ✅ | ✅ |
-| `surroundColor` | `Int`                                            | ✅ | ✅ |
-| `certificates` | `List<Certificate>`                              | ✅ | ✅ |
-| `timeout` | `Int`                                            | ✅ | ✅ |
-| `enableScreenshots` | `Boolean`                                        |  | ✅ |
-| `orientation` | `Orientation`                                    |  | ✅ |
-| `camera` | `Camera`                                         |  | ✅ |
-| `headerBackgroundColor` | `Int`                                            | ✅ | ✅ |
-| `disableExteriorEffects` | `Boolean`                                        | ✅ | ✅ |
-|**`genuinePresenceAssurance`** | `GenuinePresenceAssurance`                       |  |  |
-| ↳ `readyOvalStrokeColor` | `Int`                                            | ✅ | ✅ |
-| ↳ `notReadyOvalStrokeColor` | `Int`                                            | ✅ | ✅ |
-| ↳ `scanningPrompts` | `Boolean`                                        | ✅ | ✅ |
-|**`livenessAssurance`** | `LivenessAssurance`                              |  |  |
-| ↳ `ovalStrokeColor` | `Int`                                            | ✅ | ✅ |
-| ↳ `completedOvalStrokeColor` | `Int`                                            | ✅ | ✅ |
+| `titleTextColor` | `Int`                                          | ✅ | ✅ |
+| `promptTextColor` | `Int`                                          | ✅ | ✅ |
+| `closeButtonTintColor` | `Int`                                          | ✅ | ✅ |
+| `closeButtonImage` | `ByteArray?`                                   | ✅ | ✅ |
+| `title` | `String`                                       | ✅ | ✅ |
+| `fontPath` | `String?`                                      | ✅  | ✅ |
+| `logoImage` | `ByteArray?`                                   | ✅ | ✅ |
+| `promptBackgroundColor` | `Int`                                          | ✅ | ✅ |
+| `promptRoundedCorners` | `Boolean`                                      | ✅ | ✅ |
+| `surroundColor` | `Int`                                          | ✅ | ✅ |
+| `certificates` | `List<Certificate>`                            | ✅ | ✅ |
+| `timeout` | `Int`                                          | ✅ | ✅ |
+| `enableScreenshots` | `Boolean`                                      |  | ✅ |
+| `orientation` | `Orientation`                                  |  | ✅ |
+| `headerBackgroundColor` | `Int`                                          | ✅ | ✅ |
+| `disableExteriorEffects` | `Boolean`                                      | ✅ | ✅ |
+|**`genuinePresenceAssurance`** | `GenuinePresenceAssurance`                     |  |  |
+| ↳ `readyOvalStrokeColor` | `Int`                                          | ✅ | ✅ |
+| ↳ `notReadyOvalStrokeColor` | `Int`                                          | ✅ | ✅ |
+| ↳ `scanningPrompts` | `Boolean`                                      | ✅ | ✅ |
+| ↳ `controlYPosition` | `Boolean`                                      | ✅ | ✅ |
+| ↳ `controlXposition` | `Boolean`                                      | ✅ | ✅ |
+|**`livenessAssurance`** | `LivenessAssurance`                            |  |  |
+| ↳ `ovalStrokeColor` | `Int`                                          | ✅ | ✅ |
+| ↳ `completedOvalStrokeColor` | `Int`                                          | ✅ | ✅ |
 
 ### Filter Options
 
@@ -261,7 +262,6 @@ All errors from the native SDKs are re-mapped to Kotlin Multiplatform exceptions
 | `ListenerNotRegisteredException`  |     | ✅       | The SDK was launched before a listener was registered.                                                                           |
 | `MultiWindowUnsupportedException` |     | ✅       | The user attempted to iProov in split-screen/multi-screen mode, which is not supported.                                          |
 | `CameraException`                 |     | ✅       | An error occurred acquiring or using the camera. This could happen when a non-phone is used with/without an external/USB camera. |
-| `FaceDetectorException`           |     | ✅       | An error occurred with the face detector.                                                                                        |
 | `InvalidOptionsException`         |     | ✅       | An error occurred when trying to apply your options.|
 | `UserTimeoutException`         |✅   |          | The user has taken too long to complete the claim.|
 
@@ -330,6 +330,12 @@ For a simple iProov experience that is ready to run out-of-the-box, check out th
 In the example app folder, check the `Credentials.kt` file and add your credentials obtained from the [iProov portal](https://portal.iproov.com/).
 
 > NOTE: iProov is not supported on the iOS or Android simulator, you must use a physical device in order to iProov.
+
+### UIStates (optional)
+
+Additionally, for those wanting to monitor the user experience, there are also UIStates, which indicate when the Session's UI starts and stops.
+
+Similarly, the Session provides a `val uiState: StateFlow<IProov.UIState>` to be collected from.
 
 ## Help & support
 

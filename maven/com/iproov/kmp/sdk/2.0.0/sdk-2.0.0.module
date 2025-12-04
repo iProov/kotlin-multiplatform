@@ -1,0 +1,238 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.iproov.kmp",
+    "module": "sdk",
+    "version": "2.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-2.0.0.jar",
+          "url": "sdk-2.0.0.jar",
+          "size": 9335,
+          "sha512": "292ebc2e285296bf071e736e13754461db2c6be19f9bd659949a11030a37fe3109a1560d7ed127d30183118a017a1976150115ccb12c65c4253f714afdf7ecba",
+          "sha256": "fa6cc8732bddaf5582840a5c748ae4db518d9846622d292317db1d84384bdc20",
+          "sha1": "c7d1fd10a36aa10b3c7e18559923af6070028092",
+          "md5": "1a946072f409c15b078a1e2522490211"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "sdk-2.0.0-sources.jar",
+          "url": "sdk-2.0.0-sources.jar",
+          "size": 6013,
+          "sha512": "1a479f15d6ca50ea213d199c51ed9483af282536e63e4529f652e9396c85bc45b172f4659b7c486a5496a36794d082e64906ead8e38c7031356d0083b718b1ad",
+          "sha256": "6a7369e1d421af395c0759f37cb82b2ae079fd2161f7b9d79a1d63d719ca2477",
+          "sha1": "b4718642bddd63722555bd6777120de3c240c475",
+          "md5": "31d2566fd324de2b9813e734d0ea3528"
+        }
+      ]
+    },
+    {
+      "name": "debugApiElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../sdk-android-debug/2.0.0/sdk-android-debug-2.0.0.module",
+        "group": "com.iproov.kmp",
+        "module": "sdk-android-debug",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "name": "debugRuntimeElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../sdk-android-debug/2.0.0/sdk-android-debug-2.0.0.module",
+        "group": "com.iproov.kmp",
+        "module": "sdk-android-debug",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "name": "debugSourcesElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../sdk-android-debug/2.0.0/sdk-android-debug-2.0.0.module",
+        "group": "com.iproov.kmp",
+        "module": "sdk-android-debug",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../sdk-android/2.0.0/sdk-android-2.0.0.module",
+        "group": "com.iproov.kmp",
+        "module": "sdk-android",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../sdk-android/2.0.0/sdk-android-2.0.0.module",
+        "group": "com.iproov.kmp",
+        "module": "sdk-android",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../sdk-android/2.0.0/sdk-android-2.0.0.module",
+        "group": "com.iproov.kmp",
+        "module": "sdk-android",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../sdk-iosarm64/2.0.0/sdk-iosarm64-2.0.0.module",
+        "group": "com.iproov.kmp",
+        "module": "sdk-iosarm64",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../sdk-iosarm64/2.0.0/sdk-iosarm64-2.0.0.module",
+        "group": "com.iproov.kmp",
+        "module": "sdk-iosarm64",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../sdk-iosarm64/2.0.0/sdk-iosarm64-2.0.0.module",
+        "group": "com.iproov.kmp",
+        "module": "sdk-iosarm64",
+        "version": "2.0.0"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../sdk-iosarm64/2.0.0/sdk-iosarm64-2.0.0.module",
+        "group": "com.iproov.kmp",
+        "module": "sdk-iosarm64",
+        "version": "2.0.0"
+      }
+    }
+  ]
+}

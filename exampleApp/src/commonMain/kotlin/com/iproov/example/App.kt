@@ -140,7 +140,7 @@ private fun IproovStateSurface(state: IproovState?, onClosed: () -> Unit) {
         is IproovState.Processing -> "Processing: ${formatDouble(state.progress)}"
         is IproovState.Canceled -> "Canceled by ${state.canceler}"
         is IproovState.Error -> "Error: ${state.exception.title}"
-        is IproovState.Failure -> "Failure: ${state.failureResult.reason}"
+        is IproovState.Failure -> "Failure: ${state.failureResult.reasons.map { "[${it.feedbackCode} : ${it.description}]" }}"
         is IproovState.Success -> "Success"
         else -> ""
     }

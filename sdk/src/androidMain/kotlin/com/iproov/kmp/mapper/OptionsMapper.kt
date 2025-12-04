@@ -3,61 +3,65 @@
 package com.iproov.kmp.mapper
 
 import android.graphics.BitmapFactory
-import com.iproov.sdk.api.IProov
-import com.iproov.kmp.api.Camera
 import com.iproov.kmp.api.IproovOptions
 import com.iproov.kmp.api.LineDrawingStyle
 import com.iproov.kmp.api.NaturalStyle
 import com.iproov.kmp.api.Orientation
+import com.iproov.kmp.util.assignIfNotNull
+import com.iproov.sdk.api.IProov
 
 
 fun IproovOptions.toIproov(): IProov.Options {
     val options = IProov.Options()
 
-    options.title = this.title
-    options.titleTextColor = this.titleTextColor
-    options.headerBackgroundColor = this.headerBackgroundColor
+    this.title.assignIfNotNull { options.title = it }
+    this.titleTextColor.assignIfNotNull { options.titleTextColor = it }
+    this.headerBackgroundColor.assignIfNotNull { options.headerBackgroundColor = it }
 
-    options.filter = this.filter.toIproov()
+    this.filter.assignIfNotNull { options.filter = it.toIproov() }
 
-    options.promptTextColor = this.promptTextColor
-    options.promptBackgroundColor = this.promptBackgroundColor
-    options.promptRoundedCorners = this.promptRoundedCorners
+    this.promptTextColor.assignIfNotNull { options.promptTextColor = it }
+    this.promptBackgroundColor.assignIfNotNull { options.promptBackgroundColor = it }
+    this.promptRoundedCorners.assignIfNotNull { options.promptRoundedCorners = it }
 
-    options.disableExteriorEffects = this.disableExteriorEffects
-    options.orientation = this.orientation.toIproov()
-    options.enableScreenshots = this.enableScreenshots
-    options.timeoutSecs = this.timeoutSecs
-    options.camera = this.camera.toIproov()
-    options.surroundColor = this.surroundColor
+    this.disableExteriorEffects.assignIfNotNull { options.disableExteriorEffects = it }
+    this.orientation.assignIfNotNull { options.orientation = it.toIproov() }
+    this.enableScreenshots.assignIfNotNull { options.enableScreenshots = it }
+    this.timeoutSecs.assignIfNotNull { options.timeoutSecs = it }
+    this.surroundColor.assignIfNotNull { options.surroundColor = it }
 
-    options.certificates = this.certificates.toIproov()
+    this.certificates.assignIfNotNull { options.certificates = it.toIproov() }
+    this.fontPath.assignIfNotNull { options.font = IProov.Options.Font.PathFont(it) }
 
-    this.fontPath?.let {
-        options.font = IProov.Options.Font.PathFont( it)
+    this.logo.assignIfNotNull { logo ->
+        options.logo = IProov.Options.Icon.BitmapIcon(
+            BitmapFactory.decodeByteArray(logo, 0, logo.size)
+        )
     }
 
-    if (this.logo != null)
-        options.logo = IProov.Options.Icon.BitmapIcon(
-            BitmapFactory.decodeByteArray(this.logo, 0, this.logo!!.size)
-        )
-
     // Close button ----
-    this.closeButton.icon?.let {
+    this.closeButton?.icon?.let {
         options.closeButton.icon = IProov.Options.Icon.BitmapIcon(
             BitmapFactory.decodeByteArray(it, 0, it.size)
         )
     }
-    options.closeButton.colorTint = this.closeButton.colorTint
+
+    this.closeButton?.colorTint.assignIfNotNull { options.closeButton.colorTint = it }
 
     // GPA ----
-    options.genuinePresenceAssurance.notReadyOvalStrokeColor = this.genuinePresenceAssurance.notReadyOvalStrokeColor
-    options.genuinePresenceAssurance.readyOvalStrokeColor = this.genuinePresenceAssurance.readyOvalStrokeColor
-    options.genuinePresenceAssurance.scanningPrompts = this.genuinePresenceAssurance.scanningPrompts
+    this.genuinePresenceAssurance.assignIfNotNull { gpa ->
+        gpa.notReadyOvalStrokeColor.assignIfNotNull { options.genuinePresenceAssurance.notReadyOvalStrokeColor = it }
+        gpa.readyOvalStrokeColor.assignIfNotNull { options.genuinePresenceAssurance.readyOvalStrokeColor = it }
+        gpa.controlYPosition.assignIfNotNull { options.genuinePresenceAssurance.controlYPosition = it }
+        gpa.controlXPosition.assignIfNotNull { options.genuinePresenceAssurance.controlXPosition = it }
+        gpa.scanningPrompts.assignIfNotNull { options.genuinePresenceAssurance.scanningPrompts = it }
+    }
 
     // LA ----
-    options.livenessAssurance.ovalStrokeColor = this.livenessAssurance.ovalStrokeColor
-    options.livenessAssurance.completedOvalStrokeColor = this.livenessAssurance.completedOvalStrokeColor
+    this.livenessAssurance.assignIfNotNull { la ->
+        la.ovalStrokeColor.assignIfNotNull { options.livenessAssurance.ovalStrokeColor = it }
+        la.completedOvalStrokeColor.assignIfNotNull { options.livenessAssurance.completedOvalStrokeColor = it }
+    }
 
     return options
 }
@@ -65,13 +69,13 @@ fun IproovOptions.toIproov(): IProov.Options {
 private fun IproovOptions.Filter.toIproov(): IProov.Options.Filter {
     return when (val kmpFilter = this) {
         is IproovOptions.Filter.LineDrawingFilter -> IProov.Options.Filter.LineDrawingFilter().apply {
-            style = kmpFilter.style.toIproov()
-            foregroundColor = kmpFilter.foregroundColor
-            backgroundColor = kmpFilter.backgroundColor
+            kmpFilter.style.assignIfNotNull { style = it.toIproov() }
+            kmpFilter.foregroundColor.assignIfNotNull { foregroundColor = it }
+            kmpFilter.backgroundColor.assignIfNotNull { backgroundColor = it }
         }
 
         is IproovOptions.Filter.NaturalFilter -> IProov.Options.Filter.NaturalFilter().apply {
-            style = kmpFilter.style.toIproov()
+            kmpFilter.style.assignIfNotNull { style = it.toIproov() }
         }
     }
 }
@@ -97,13 +101,6 @@ private fun Orientation.toIproov(): IProov.Orientation {
         Orientation.LANDSCAPE -> IProov.Orientation.LANDSCAPE
         Orientation.REVERSE_PORTRAIT -> IProov.Orientation.REVERSE_PORTRAIT
         Orientation.REVERSE_LANDSCAPE -> IProov.Orientation.REVERSE_LANDSCAPE
-    }
-}
-
-private fun Camera.toIproov(): IProov.Camera {
-    return when (this) {
-        Camera.FRONT -> IProov.Camera.FRONT
-        Camera.EXTERNAL -> IProov.Camera.EXTERNAL
     }
 }
 

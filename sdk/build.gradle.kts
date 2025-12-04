@@ -14,23 +14,20 @@ kotlin {
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_11)
         }
-        publishAllLibraryVariants()
+        publishLibraryVariants("release", "debug")
     }
 
-    listOf(iosArm64()).forEach { iosTarget ->
+    iosArm64().compilations.getByName("main") {
+        val iproov by cinterops.creating {
+            // Path to the .def file
+            definitionFile.set(project.file("src/nativeInterop/cinterop/cinterop.def"))
 
-        iosTarget.compilations.getByName("main") {
-            val iproov by cinterops.creating {
-                // Path to the .def file
-                definitionFile.set(project.file("src/nativeInterop/cinterop/cinterop.def"))
-
-                compilerOpts(
-                    "-fmodules",
-                    "-framework",
-                    "IOSFramework",
-                    "-F${projectDir}/libs/ios/ios-arm64"
-                )
-            }
+            compilerOpts(
+                "-fmodules",
+                "-framework",
+                "IOSFramework",
+                "-F${projectDir}/libs/ios/Device"
+            )
         }
     }
 
