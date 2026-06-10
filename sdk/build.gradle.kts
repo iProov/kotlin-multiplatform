@@ -3,8 +3,6 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinxSerialization)
-    alias(libs.plugins.jetbrainsCompose)
-    alias(libs.plugins.compose.compiler)
     alias(libs.plugins.kotlinMultiplatform)
     id("maven-publish")
 }
@@ -17,11 +15,10 @@ kotlin {
         publishLibraryVariants("release", "debug")
     }
 
+    // Physical device (arm64)
     iosArm64().compilations.getByName("main") {
         val iproov by cinterops.creating {
-            // Path to the .def file
             definitionFile.set(project.file("src/nativeInterop/cinterop/cinterop.def"))
-
             compilerOpts(
                 "-fmodules",
                 "-framework",
@@ -31,12 +28,23 @@ kotlin {
         }
     }
 
+    // Simulator (Apple Silicon)
+    iosSimulatorArm64().compilations.getByName("main") {
+        val iproov by cinterops.creating {
+            definitionFile.set(project.file("src/nativeInterop/cinterop/cinterop.def"))
+            compilerOpts(
+                "-fmodules",
+                "-framework",
+                "IOSFramework",
+                "-F${projectDir}/libs/ios/Simulator"
+            )
+        }
+    }
+
     sourceSets {
 
         androidMain.dependencies {
             implementation(libs.androidx.startup.runtime)
-
-            implementation(compose.ui)
 
             implementation(libs.ktor.client.okhttp)
 
@@ -44,10 +52,6 @@ kotlin {
         }
 
         commonMain.dependencies {
-            // Compose
-            implementation(compose.foundation)
-            implementation(compose.material3)
-
             // Ktor
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.negotiation)

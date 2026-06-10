@@ -57,7 +57,7 @@ The iProov Kotlin Multiplatform SDK is provided via this repository, which conta
 
     ```kotlin
     commonMain.dependencies {
-        implementation('com.iproov.kmp:sdk:2.0.0')
+        implementation("com.iproov.kmp:sdk:2.0.1")
     }
     ```
 

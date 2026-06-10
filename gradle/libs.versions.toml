@@ -9,8 +9,8 @@ compose-plugin = "1.6.11"
 kotlin = "2.2.21"
 ktor = "2.3.12"
 startup-runtime = "1.2.0"
-iproov-android = "11.1.0"
-iproov-sdk-version = "2.0.0"
+iproov-android = "11.1.1"
+iproov-sdk-version = "2.0.1"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }

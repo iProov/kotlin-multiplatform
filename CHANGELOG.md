@@ -1,5 +1,20 @@
 # iProov Face Kotlin-Multiplatform SDK
 
+## 2.0.1
+
+iProov Face Kotlin-Multiplatform SDK v2.0.1 includes the following:
+
+- Remove internal dependency on Compose
+- Support for iOS Simulator
+
+### iOS
+
+* SDK version [v13.1.1](https://github.com/iProov/ios/releases/tag/13.1.1).
+
+### Android
+
+* SDK version [v11.1.1](https://github.com/iProov/android/releases/tag/v11.1.1).
+
 ## 2.0.0
 
 iProov Face Kotlin-Multiplatform SDK v2.0.0 includes the following:
