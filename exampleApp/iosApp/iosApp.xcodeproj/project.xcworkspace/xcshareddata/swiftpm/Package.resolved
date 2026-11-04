@@ -1,0 +1,15 @@
+{
+  "originHash" : "c16002f4fab6526ca4f3bc9cb5e1041e082bf4845e5c508494a4de768d6f98a8",
+  "pins" : [
+    {
+      "identity" : "ios-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iProov/ios-spm",
+      "state" : {
+        "revision" : "dcafa09911c0d18ff331efdaccf644e53d838202",
+        "version" : "14.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

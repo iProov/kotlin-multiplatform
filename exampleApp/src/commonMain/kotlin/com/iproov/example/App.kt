@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.dp
 import com.iproov.example.exampleapp.generated.resources.Res
 import com.iproov.example.exampleapp.generated.resources.iproov_logo
 import com.iproov.example.viewmodel.ClaimViewModel
-import com.iproov.kmp.api.IproovState
+import com.iproov.kmp.api.IProovState
 import com.iproov.kmp.api_client.AssuranceType
 import com.iproov.kmp.api_client.ClaimType
 import org.jetbrains.compose.resources.painterResource
@@ -88,7 +88,7 @@ fun App() {
 
             // IProov state
             AnimatedVisibility(viewModel.iProovState.value != null) {
-                IproovStateSurface(
+                IProovStateSurface(
                     state = viewModel.iProovState.value,
                     onClosed = viewModel::resetState
                 )
@@ -132,16 +132,16 @@ fun formatDouble(value: Double): String {
 }
 
 @Composable
-private fun IproovStateSurface(state: IproovState?, onClosed: () -> Unit) {
+private fun IProovStateSurface(state: IProovState?, onClosed: () -> Unit) {
     val stateText = when (state) {
-        is IproovState.Starting -> "Starting"
-        is IproovState.Connecting -> "Connecting"
-        is IproovState.Connected -> "Connected"
-        is IproovState.Processing -> "Processing: ${formatDouble(state.progress)}"
-        is IproovState.Canceled -> "Canceled by ${state.canceler}"
-        is IproovState.Error -> "Error: ${state.exception.title}"
-        is IproovState.Failure -> "Failure: ${state.failureResult.reasons.map { "[${it.feedbackCode} : ${it.description}]" }}"
-        is IproovState.Success -> "Success"
+        is IProovState.Starting -> "Starting"
+        is IProovState.Connecting -> "Connecting"
+        is IProovState.Connected -> "Connected"
+        is IProovState.Processing -> "Processing: ${formatDouble(state.progress)}"
+        is IProovState.Canceled -> "Canceled by ${state.canceler}"
+        is IProovState.Error -> "Error: ${state.exception.title}"
+        is IProovState.Failure -> "Failure: ${state.reasons.map { "[${it.feedbackCode} : ${it.description}]" }}"
+        is IProovState.Success -> "Success"
         else -> ""
     }
 

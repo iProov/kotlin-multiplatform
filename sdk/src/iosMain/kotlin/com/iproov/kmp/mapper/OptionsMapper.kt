@@ -2,10 +2,11 @@
 
 package com.iproov.kmp.mapper
 
-import com.iproov.kmp.api.IproovOptions
+import com.iproov.kmp.api.IProovOptions
 import com.iproov.kmp.api.LineDrawingStyle
 import com.iproov.kmp.api.NaturalStyle
 import com.iproov.kmp.util.assignIfNotNull
+import com.iproov.sdk.IPAccessibilityOptions
 import com.iproov.sdk.IPFilterProtocol
 import com.iproov.sdk.IPGenuinePresenceAssuranceOptions
 import com.iproov.sdk.IPLineDrawingFilter
@@ -22,14 +23,14 @@ import com.iproov.sdk.IPOptions
 import kotlinx.cinterop.ExperimentalForeignApi
 
 @OptIn(ExperimentalForeignApi::class)
-fun IproovOptions.toIproov(): IPOptions {
+fun IProovOptions.toIProov(): IPOptions {
     val iosOptions = IPOptions()
 
     this.title.assignIfNotNull { iosOptions.setTitle(it) }
     this.titleTextColor.assignIfNotNull { iosOptions.setTitleTextColor(it.toUIColor()) }
     this.headerBackgroundColor.assignIfNotNull { iosOptions.setHeaderBackgroundColor(it.toUIColor()) }
 
-    this.filter.assignIfNotNull { iosOptions.setFilter(it.toIproov()) }
+    this.filter.assignIfNotNull { iosOptions.setFilter(it.toIProov()) }
 
     this.promptTextColor.assignIfNotNull { iosOptions.setPromptTextColor(it.toUIColor()) }
     this.promptBackgroundColor.assignIfNotNull { iosOptions.setPromptBackgroundColor(it.toUIColor()) }
@@ -61,6 +62,15 @@ fun IproovOptions.toIproov(): IPOptions {
                 gpa.scanningPrompts.assignIfNotNull { setScanningPrompts(it) }
                 gpa.controlXPosition.assignIfNotNull { setControlXPosition(it) }
                 gpa.controlYPosition.assignIfNotNull { setControlYPosition(it) }
+                gpa.accessibility.assignIfNotNull { accessibility ->
+                    setAccessibility(
+                        IPAccessibilityOptions().apply {
+                            accessibility.isColorEnabled.assignIfNotNull { setIsColorEnabled(it) }
+                            accessibility.isSoundEnabled.assignIfNotNull { setIsSoundEnabled(it) }
+                            accessibility.isVibrationEnabled.assignIfNotNull { setIsVibrationEnabled(it) }
+                        }
+                    )
+                }
             }
         )
     }
@@ -79,23 +89,23 @@ fun IproovOptions.toIproov(): IPOptions {
 }
 
 @OptIn(ExperimentalForeignApi::class)
-fun IproovOptions.Filter.toIproov(): IPFilterProtocol {
+fun IProovOptions.Filter.toIProov(): IPFilterProtocol {
     return when (val kmpFilter = this) {
-        is IproovOptions.Filter.LineDrawingFilter -> IPLineDrawingFilter().apply {
-            kmpFilter.style.assignIfNotNull { setStyle(it.toIproov()) }
+        is IProovOptions.Filter.LineDrawingFilter -> IPLineDrawingFilter().apply {
+            kmpFilter.style.assignIfNotNull { setStyle(it.toIProov()) }
             kmpFilter.foregroundColor.assignIfNotNull { setForegroundColor(it.toUIColor()) }
             kmpFilter.backgroundColor.assignIfNotNull { setBackgroundColor(it.toUIColor()) }
         }
 
-        is IproovOptions.Filter.NaturalFilter ->
+        is IProovOptions.Filter.NaturalFilter ->
             IPNaturalFilter().apply {
-                kmpFilter.style.assignIfNotNull { setStyle(it.toIproov()) }
+                kmpFilter.style.assignIfNotNull { setStyle(it.toIProov()) }
             }
     }
 }
 
 @OptIn(ExperimentalForeignApi::class)
-private fun LineDrawingStyle.toIproov(): IPLineDrawingFilterStyle {
+private fun LineDrawingStyle.toIProov(): IPLineDrawingFilterStyle {
     return when (this) {
         LineDrawingStyle.SHADED -> IPLineDrawingFilterStyleShaded
         LineDrawingStyle.CLASSIC -> IPLineDrawingFilterStyleClassic
@@ -104,7 +114,7 @@ private fun LineDrawingStyle.toIproov(): IPLineDrawingFilterStyle {
 }
 
 @OptIn(ExperimentalForeignApi::class)
-private fun NaturalStyle.toIproov(): IPNaturalFilterStyle {
+private fun NaturalStyle.toIProov(): IPNaturalFilterStyle {
     return when (this) {
         NaturalStyle.BLUR -> IPNaturalFilterStyleBlur
         NaturalStyle.CLEAR -> IPNaturalFilterStyleClear

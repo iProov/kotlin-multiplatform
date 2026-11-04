@@ -29,5 +29,6 @@ dependencyResolutionManagement {
     }
 }
 
-include(":ExampleApp")
+include(":exampleApp")
+include(":exampleApp:androidApp")
 include(":sdk")

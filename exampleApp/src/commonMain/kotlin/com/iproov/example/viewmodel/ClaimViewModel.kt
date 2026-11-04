@@ -9,9 +9,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.iproov.example.util.Credentials
-import com.iproov.kmp.api.Iproov
-import com.iproov.kmp.api.IproovOptions
-import com.iproov.kmp.api.IproovState
+import com.iproov.kmp.api.IProov
+import com.iproov.kmp.api.IProovOptions
+import com.iproov.kmp.api.IProovState
 import com.iproov.kmp.api_client.AssuranceType
 import com.iproov.kmp.api_client.ClaimType
 import com.iproov.kmp.api_client.impl.ApiClientImpl
@@ -28,14 +28,14 @@ class ClaimViewModel : ViewModel() {
         secret = Credentials.SECRET
     )
 
-    private val _iProovState: MutableState<IproovState?> = mutableStateOf(null)
-    val iProovState: State<IproovState?> = _iProovState
+    private val _iProovState: MutableState<IProovState?> = mutableStateOf(null)
+    val iProovState: State<IProovState?> = _iProovState
 
     private val _message: MutableState<String?> = mutableStateOf(null)
     val message: State<String?> = _message
 
     init {
-        collectIproovState()
+        collectIProovState()
     }
 
     fun launchIProov(claimType: ClaimType, username: String, assuranceType: AssuranceType) {
@@ -72,11 +72,11 @@ class ClaimViewModel : ViewModel() {
         _iProovState.value = null
     }
 
-    fun sdkVersion(): String = Iproov.sdkVersion
+    fun sdkVersion(): String = IProov.sdkVersion
 
-    private fun collectIproovState() {
+    private fun collectIProovState() {
         viewModelScope.launch {
-            Iproov.sessionState.collect {
+            IProov.sessionState.collect {
                 _iProovState.value = it
             }
         }
@@ -84,9 +84,9 @@ class ClaimViewModel : ViewModel() {
 
     private fun startScan(token: String) {
         viewModelScope.launch {
-            val options = IproovOptions()
+            val options = IProovOptions()
 
-            Iproov.launchSession(Credentials.BASE_URL, token, options)
+            IProov.launchSession(Credentials.BASE_URL, token, options)
         }
     }
 }

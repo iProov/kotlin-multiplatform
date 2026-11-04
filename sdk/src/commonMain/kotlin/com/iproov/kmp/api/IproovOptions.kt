@@ -2,14 +2,13 @@
 
 package com.iproov.kmp.api
 
-// IproovOptions ----
+// IProovOptions ----
 
 enum class LineDrawingStyle { CLASSIC, SHADED, VIBRANT }
 enum class NaturalStyle { BLUR, CLEAR }
-enum class Orientation { PORTRAIT, LANDSCAPE, REVERSE_PORTRAIT, REVERSE_LANDSCAPE }
 
-// Mutable IproovOptions with defaults
-class IproovOptions {
+// Mutable IProovOptions with defaults
+class IProovOptions {
     var title: String? = null
     var titleTextColor: Int? = null
     var headerBackgroundColor: Int? = null
@@ -25,7 +24,6 @@ class IproovOptions {
     var disableExteriorEffects: Boolean? = null
     var certificates: List<Certificate>? = null
     var timeoutSecs: Int? = null
-    var orientation: Orientation? = null
     var genuinePresenceAssurance: GenuinePresenceAssurance? = null
     var livenessAssurance: LivenessAssurance? = null
 
@@ -59,5 +57,12 @@ class IproovOptions {
         var controlYPosition: Boolean? = null,
         var controlXPosition: Boolean? = null,
         var scanningPrompts: Boolean? = null,
-    )
+        var accessibility: Accessibility? = null,
+    ) {
+        data class Accessibility(
+            var isColorEnabled: Boolean? = null,
+            var isSoundEnabled: Boolean? = null,
+            var isVibrationEnabled: Boolean? = null,
+        )
+    }
 }

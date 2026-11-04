@@ -5,10 +5,10 @@ package com.iproov.kmp.api
 import android.content.Context
 import androidx.core.content.edit
 import com.iproov.kmp.AppContext
-import com.iproov.kmp.mapper.toIproov
-import com.iproov.kmp.mapper.toIproovState
-import com.iproov.kmp.mapper.toIproovUIState
-import com.iproov.sdk.api.IProov
+import com.iproov.kmp.mapper.toIProov
+import com.iproov.kmp.mapper.toIProovState
+import com.iproov.kmp.mapper.toIProovUIState
+import com.iproov.sdk.api.IProov as NativeIProov
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -18,51 +18,51 @@ import kotlinx.coroutines.flow.onSubscription
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-actual object Iproov {
+actual object IProov {
 
     private val job = SupervisorJob()
     private val coroutineScope = CoroutineScope(Dispatchers.IO + job)
     private var sessionStateJob: Job? = null
     private var sessionUIStateJob: Job? = null
 
-    actual val sdkVersion: String = IProov.sdkVersion
-    actual val buildNumber: String = IProov.buildNumber
+    actual val sdkVersion: String = NativeIProov.sdkVersion
+    actual val buildNumber: String = NativeIProov.buildNumber
 
-    actual val sessionState: MutableStateFlow<IproovState?> = MutableStateFlow(null)
-    actual val uiState: MutableStateFlow<IproovUIState?> = MutableStateFlow(null)
+    actual val sessionState: MutableStateFlow<IProovState?> = MutableStateFlow(null)
+    actual val uiState: MutableStateFlow<IProovUIState?> = MutableStateFlow(null)
 
     init {
         setEnvironment(AppContext.get())
     }
 
-    actual suspend fun launchSession(baseUrl: String, token: String, iproovOptions: IproovOptions) {
-        val session = IProov.createSession(AppContext.get(), baseUrl, token, iproovOptions.toIproov())
+    actual suspend fun launchSession(baseUrl: String, token: String, iproovOptions: IProovOptions) {
+        val session = NativeIProov.createSession(AppContext.get(), baseUrl, token, iproovOptions.toIProov())
         // Observe first, then start
         observeSessionState(session) { session.start() }
         observeSessionUIState(session)
     }
 
     actual suspend fun cancelSession() {
-        IProov.session?.cancel()
+        NativeIProov.session?.cancel()
         sessionStateJob?.cancel()
         sessionState.value = null
     }
 
-    private fun observeSessionUIState(session: IProov.Session) {
+    private fun observeSessionUIState(session: NativeIProov.Session) {
         sessionUIStateJob?.cancel()
         sessionUIStateJob = coroutineScope.launch(Dispatchers.IO) {
             session.uiState
                 .collect { sessionUIState ->
                     if (sessionUIStateJob?.isActive == true) {
                         withContext(Dispatchers.Main) {
-                            uiState.value = sessionUIState.toIproovUIState()
+                            uiState.value = sessionUIState.toIProovUIState()
                         }
                     }
                 }
         }
     }
 
-    private fun observeSessionState(session: IProov.Session, whenReady: (() -> Unit)? = null) {
+    private fun observeSessionState(session: NativeIProov.Session, whenReady: (() -> Unit)? = null) {
         sessionStateJob?.cancel()
         sessionStateJob = coroutineScope.launch {
             session.state
@@ -70,7 +70,7 @@ actual object Iproov {
                 .collect { state ->
                     if (sessionStateJob?.isActive == true) {
                         withContext(Dispatchers.Main) {
-                            sessionState.value = state.toIproovState()
+                            sessionState.value = state.toIProovState()
                         }
                     }
                 }

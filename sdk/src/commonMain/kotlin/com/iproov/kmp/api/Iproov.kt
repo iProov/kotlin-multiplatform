@@ -4,13 +4,13 @@ package com.iproov.kmp.api
 
 import kotlinx.coroutines.flow.MutableStateFlow
 
-expect object Iproov {
+expect object IProov {
     val sdkVersion: String
     val buildNumber: String
 
-    val sessionState: MutableStateFlow<IproovState?>
-    val uiState: MutableStateFlow<IproovUIState?>
+    val sessionState: MutableStateFlow<IProovState?>
+    val uiState: MutableStateFlow<IProovUIState?>
 
-    suspend fun launchSession(baseUrl: String, token: String, iproovOptions: IproovOptions)
+    suspend fun launchSession(baseUrl: String, token: String, iproovOptions: IProovOptions)
     suspend fun cancelSession()
 }

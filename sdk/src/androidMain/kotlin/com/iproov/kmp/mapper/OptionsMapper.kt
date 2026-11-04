@@ -3,34 +3,32 @@
 package com.iproov.kmp.mapper
 
 import android.graphics.BitmapFactory
-import com.iproov.kmp.api.IproovOptions
+import com.iproov.kmp.api.IProovOptions
 import com.iproov.kmp.api.LineDrawingStyle
 import com.iproov.kmp.api.NaturalStyle
-import com.iproov.kmp.api.Orientation
 import com.iproov.kmp.util.assignIfNotNull
 import com.iproov.sdk.api.IProov
 
 
-fun IproovOptions.toIproov(): IProov.Options {
+fun IProovOptions.toIProov(): IProov.Options {
     val options = IProov.Options()
 
     this.title.assignIfNotNull { options.title = it }
     this.titleTextColor.assignIfNotNull { options.titleTextColor = it }
     this.headerBackgroundColor.assignIfNotNull { options.headerBackgroundColor = it }
 
-    this.filter.assignIfNotNull { options.filter = it.toIproov() }
+    this.filter.assignIfNotNull { options.filter = it.toIProov() }
 
     this.promptTextColor.assignIfNotNull { options.promptTextColor = it }
     this.promptBackgroundColor.assignIfNotNull { options.promptBackgroundColor = it }
     this.promptRoundedCorners.assignIfNotNull { options.promptRoundedCorners = it }
 
     this.disableExteriorEffects.assignIfNotNull { options.disableExteriorEffects = it }
-    this.orientation.assignIfNotNull { options.orientation = it.toIproov() }
     this.enableScreenshots.assignIfNotNull { options.enableScreenshots = it }
     this.timeoutSecs.assignIfNotNull { options.timeoutSecs = it }
     this.surroundColor.assignIfNotNull { options.surroundColor = it }
 
-    this.certificates.assignIfNotNull { options.certificates = it.toIproov() }
+    this.certificates.assignIfNotNull { options.certificates = it.toIProov() }
     this.fontPath.assignIfNotNull { options.font = IProov.Options.Font.PathFont(it) }
 
     this.logo.assignIfNotNull { logo ->
@@ -55,6 +53,12 @@ fun IproovOptions.toIproov(): IProov.Options {
         gpa.controlYPosition.assignIfNotNull { options.genuinePresenceAssurance.controlYPosition = it }
         gpa.controlXPosition.assignIfNotNull { options.genuinePresenceAssurance.controlXPosition = it }
         gpa.scanningPrompts.assignIfNotNull { options.genuinePresenceAssurance.scanningPrompts = it }
+
+        gpa.accessibility.assignIfNotNull { accessibility ->
+            accessibility.isColorEnabled.assignIfNotNull { options.genuinePresenceAssurance.accessibility.isColorEnabled = it }
+            accessibility.isSoundEnabled.assignIfNotNull { options.genuinePresenceAssurance.accessibility.isSoundEnabled = it }
+            accessibility.isVibrationEnabled.assignIfNotNull { options.genuinePresenceAssurance.accessibility.isVibrationEnabled = it }
+        }
     }
 
     // LA ----
@@ -66,21 +70,21 @@ fun IproovOptions.toIproov(): IProov.Options {
     return options
 }
 
-private fun IproovOptions.Filter.toIproov(): IProov.Options.Filter {
+private fun IProovOptions.Filter.toIProov(): IProov.Options.Filter {
     return when (val kmpFilter = this) {
-        is IproovOptions.Filter.LineDrawingFilter -> IProov.Options.Filter.LineDrawingFilter().apply {
-            kmpFilter.style.assignIfNotNull { style = it.toIproov() }
+        is IProovOptions.Filter.LineDrawingFilter -> IProov.Options.Filter.LineDrawingFilter().apply {
+            kmpFilter.style.assignIfNotNull { style = it.toIProov() }
             kmpFilter.foregroundColor.assignIfNotNull { foregroundColor = it }
             kmpFilter.backgroundColor.assignIfNotNull { backgroundColor = it }
         }
 
-        is IproovOptions.Filter.NaturalFilter -> IProov.Options.Filter.NaturalFilter().apply {
-            kmpFilter.style.assignIfNotNull { style = it.toIproov() }
+        is IProovOptions.Filter.NaturalFilter -> IProov.Options.Filter.NaturalFilter().apply {
+            kmpFilter.style.assignIfNotNull { style = it.toIProov() }
         }
     }
 }
 
-private fun LineDrawingStyle.toIproov(): IProov.LineDrawingStyle {
+private fun LineDrawingStyle.toIProov(): IProov.LineDrawingStyle {
     return when (this) {
         LineDrawingStyle.SHADED -> IProov.LineDrawingStyle.SHADED
         LineDrawingStyle.CLASSIC -> IProov.LineDrawingStyle.CLASSIC
@@ -88,22 +92,13 @@ private fun LineDrawingStyle.toIproov(): IProov.LineDrawingStyle {
     }
 }
 
-private fun NaturalStyle.toIproov(): IProov.NaturalStyle {
+private fun NaturalStyle.toIProov(): IProov.NaturalStyle {
     return when (this) {
         NaturalStyle.BLUR -> IProov.NaturalStyle.BLUR
         NaturalStyle.CLEAR -> IProov.NaturalStyle.CLEAR
     }
 }
 
-private fun Orientation.toIproov(): IProov.Orientation {
-    return when (this) {
-        Orientation.PORTRAIT -> IProov.Orientation.PORTRAIT
-        Orientation.LANDSCAPE -> IProov.Orientation.LANDSCAPE
-        Orientation.REVERSE_PORTRAIT -> IProov.Orientation.REVERSE_PORTRAIT
-        Orientation.REVERSE_LANDSCAPE -> IProov.Orientation.REVERSE_LANDSCAPE
-    }
-}
-
-private fun List<IproovOptions.Certificate>.toIproov(): List<IProov.Options.Certificate> {
+private fun List<IProovOptions.Certificate>.toIProov(): List<IProov.Options.Certificate> {
     return this.map { IProov.Options.Certificate(it.spki) }
 }

@@ -2,11 +2,10 @@
 
 package com.iproov.kmp.api
 
-import com.iproov.kmp.mapper.convertUIImageToByteArray
-import com.iproov.kmp.mapper.toIproov
+import com.iproov.kmp.mapper.toIProov
 import com.iproov.sdk.IPErrorCode
 import com.iproov.sdk.IPSession
-import com.iproov.sdk.IProov
+import com.iproov.sdk.IProov as NativeIProov
 import com.iproov.sdk.IProovViewDelegateProtocol
 import com.iproov.sdk.buildNumber
 import com.iproov.sdk.launchWithStreamingURL
@@ -19,13 +18,13 @@ import platform.darwin.NSObject
 
 
 @OptIn(ExperimentalForeignApi::class)
-actual object Iproov {
+actual object IProov {
 
-    actual val sdkVersion: String = IProov.versionStr()
-    actual val buildNumber: String = IProov.buildNumber().toString()
+    actual val sdkVersion: String = NativeIProov.versionStr()
+    actual val buildNumber: String = NativeIProov.buildNumber().toString()
 
-    actual val sessionState: MutableStateFlow<IproovState?> = MutableStateFlow(null)
-    actual val uiState: MutableStateFlow<IproovUIState?> = MutableStateFlow(null)
+    actual val sessionState: MutableStateFlow<IProovState?> = MutableStateFlow(null)
+    actual val uiState: MutableStateFlow<IProovUIState?> = MutableStateFlow(null)
 
     private var session: IPSession? = null
 
@@ -33,41 +32,38 @@ actual object Iproov {
         setEnvironment()
     }
 
-    actual suspend fun launchSession(baseUrl: String, token: String, iproovOptions: IproovOptions) {
+    actual suspend fun launchSession(baseUrl: String, token: String, iproovOptions: IProovOptions) {
         val url = NSURL(string = baseUrl)
-        val options = iproovOptions.toIproov()
+        val options = iproovOptions.toIProov()
 
         options.setViewDelegate(delegate)
 
-        session = IProov.launchWithStreamingURL(
+        session = NativeIProov.launchWithStreamingURL(
             streamingURL = url,
             token = token,
             options = options,
             connecting = {
-                sessionState.tryEmit(IproovState.Connecting)
+                sessionState.tryEmit(IProovState.Connecting)
             },
             connected = {
-                sessionState.tryEmit(IproovState.Connected)
+                sessionState.tryEmit(IProovState.Connected)
             },
             processing = { progress, message ->
-                sessionState.tryEmit(IproovState.Processing(progress, message ?: ""))
+                sessionState.tryEmit(IProovState.Processing(progress, message ?: ""))
             },
             success = {
-                val frame = if (it?.frame() == null) null else convertUIImageToByteArray(it.frame()!!)
-                sessionState.tryEmit(IproovState.Success(SuccessResult(frame)))
+                sessionState.tryEmit(IProovState.Success)
             },
             canceled = {
-                sessionState.tryEmit(IproovState.Canceled(Canceler.USER))
+                sessionState.tryEmit(IProovState.Canceled(Canceler.USER))
             },
-            failure = { feedbackCodeList, descriptionList, frame ->
-                val frameReceived = if (frame == null) null else convertUIImageToByteArray(frame)
-
+            failure = { feedbackCodeList, descriptionList ->
                 val failureReasons = mutableListOf<FailureReason>()
                 feedbackCodeList?.forEachIndexed { index, feedbackCode ->
                     failureReasons.add(FailureReason(feedbackCode.toString(), descriptionList?.get(index)?.toString() ?: ""))
                 }
 
-                sessionState.tryEmit(IproovState.Failure(FailureResult(failureReasons, frameReceived)))
+                sessionState.tryEmit(IProovState.Failure(failureReasons))
             },
             error = {
                 val description = it?.localizedDescription() ?: ""
@@ -77,11 +73,14 @@ actual object Iproov {
                     IPErrorCode.cameraPermissionDenied() -> CameraPermissionException(description)
                     IPErrorCode.serverError() -> ServerException("", description)
                     IPErrorCode.userTimeout() -> UserTimeoutException(description)
-                    IPErrorCode.notSupported() -> UnsupportedDeviceException(description)
+                    IPErrorCode.notSupported(),
+                    IPErrorCode.unsupportedDevice() -> UnsupportedDeviceException(description)
+                    IPErrorCode.unsupportedOSVersion() -> UnsupportedOSVersionException(description)
+                    IPErrorCode.unsupportedSDKVersion() -> UnsupportedSDKVersionException(description)
                     else -> UnexpectedErrorException("", description)
                 }
 
-                sessionState.tryEmit(IproovState.Error(result))
+                sessionState.tryEmit(IProovState.Error(result))
             }
         )
     }
@@ -93,15 +92,15 @@ actual object Iproov {
 
     private val delegate = object : NSObject(), IProovViewDelegateProtocol {
         override fun willPresentIProovView() {
-            uiState.value = IproovUIState.NotStarted
+            uiState.value = IProovUIState.NotStarted
         }
 
         override fun didPresentIProovView() {
-            uiState.value = IproovUIState.Started
+            uiState.value = IProovUIState.Started
         }
 
         override fun didDismissIProovView() {
-            uiState.value = IproovUIState.Ended
+            uiState.value = IProovUIState.Ended
         }
     }
 

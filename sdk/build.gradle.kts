@@ -1,23 +1,26 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.androidKotlinMultiplatformLibrary)
     alias(libs.plugins.kotlinxSerialization)
     alias(libs.plugins.kotlinMultiplatform)
     id("maven-publish")
 }
 
 kotlin {
-    androidTarget {
+    android {
+        namespace = "com.iproov.kmp"
+        compileSdk = libs.versions.android.compileSdk.get().toInt()
+        minSdk = libs.versions.android.minSdk.get().toInt()
+
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_11)
         }
-        publishLibraryVariants("release", "debug")
     }
 
     // Physical device (arm64)
     iosArm64().compilations.getByName("main") {
-        val iproov by cinterops.creating {
+        cinterops.create("iproov") {
             definitionFile.set(project.file("src/nativeInterop/cinterop/cinterop.def"))
             compilerOpts(
                 "-fmodules",
@@ -30,7 +33,7 @@ kotlin {
 
     // Simulator (Apple Silicon)
     iosSimulatorArm64().compilations.getByName("main") {
-        val iproov by cinterops.creating {
+        cinterops.create("iproov") {
             definitionFile.set(project.file("src/nativeInterop/cinterop/cinterop.def"))
             compilerOpts(
                 "-fmodules",
@@ -67,31 +70,10 @@ kotlin {
 group = "com.iproov.kmp"
 version = libs.versions.iproov.sdk.version.get()
 
-android {
-    namespace = group.toString()
-    compileSdk = libs.versions.android.compileSdk.get().toInt()
-
-    defaultConfig {
-        minSdk = libs.versions.android.minSdk.get().toInt()
-    }
-    buildTypes {
-        getByName("release") {
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-        }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-}
-
 publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            groupId = "com.iproov.kmp"
-            artifactId = "sdk"
-            version = version.toString()
-            from(components["kotlin"])
+    repositories {
+        maven {
+            url = uri(rootProject.extra["deployPath"] as String)
         }
     }
 }

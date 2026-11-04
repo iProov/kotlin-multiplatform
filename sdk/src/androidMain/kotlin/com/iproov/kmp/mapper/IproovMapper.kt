@@ -2,70 +2,64 @@
 
 package com.iproov.kmp.mapper
 
-import android.graphics.Bitmap
 import com.iproov.kmp.AppContext
 import com.iproov.kmp.api.CameraException
 import com.iproov.kmp.api.CameraPermissionException
 import com.iproov.kmp.api.Canceler
 import com.iproov.kmp.api.CaptureAlreadyActiveException
 import com.iproov.kmp.api.FailureReason
-import com.iproov.kmp.api.FailureResult
 import com.iproov.kmp.api.IProovException
 import com.iproov.kmp.api.InvalidOptionsException
-import com.iproov.kmp.api.IproovState
-import com.iproov.kmp.api.IproovUIState
+import com.iproov.kmp.api.IProovState
+import com.iproov.kmp.api.IProovUIState
 import com.iproov.kmp.api.MultiWindowUnsupportedException
 import com.iproov.kmp.api.NetworkException
 import com.iproov.kmp.api.ServerException
-import com.iproov.kmp.api.SuccessResult
 import com.iproov.kmp.api.UnexpectedErrorException
 import com.iproov.kmp.api.UnsupportedDeviceException
+import com.iproov.kmp.api.UnsupportedOSVersionException
+import com.iproov.kmp.api.UnsupportedSDKVersionException
 import com.iproov.sdk.api.IProov
 import com.iproov.sdk.api.IProov.UIState
-import java.io.ByteArrayOutputStream
 
 
-fun IProov.State.toIproovState(): IproovState {
+fun IProov.State.toIProovState(): IProovState {
     return when (this) {
-        IProov.State.Starting -> IproovState.Starting
-        IProov.State.Connecting -> IproovState.Connecting
-        IProov.State.Connected -> IproovState.Connected
-        is IProov.State.Processing -> IproovState.Processing(this.progress, this.message)
-        is IProov.State.Success -> {
-            val frame = if (this.successResult.frame == null) null else bitmapToByteArray(this.successResult.frame!!)
-            IproovState.Success(SuccessResult(frame))
-        }
+        IProov.State.Starting -> IProovState.Starting
+        IProov.State.Connecting -> IProovState.Connecting
+        IProov.State.Connected -> IProovState.Connected
+        is IProov.State.Processing -> IProovState.Processing(this.progress, this.message)
+        IProov.State.Success -> IProovState.Success
 
         is IProov.State.Failure -> {
-            val frame = if (this.failureResult.frame == null) null else bitmapToByteArray(this.failureResult.frame!!)
             val context = AppContext.get()
-            val reasons = this.failureResult.reasons.map { FailureReason(it.feedbackCode, context.getString(it.description)) }
+            val reasons = this.reasons.map { FailureReason(it.feedbackCode, context.getString(it.description)) }
 
-            IproovState.Failure(FailureResult(reasons, frame))
+            IProovState.Failure(reasons)
         }
 
         is IProov.State.Canceled -> {
             val canceler = if (this.canceler.name.lowercase() == "user") Canceler.USER else Canceler.INTEGRATION
 
-            IproovState.Canceled(canceler)
+            IProovState.Canceled(canceler)
         }
 
         is IProov.State.Error -> {
-            IproovState.Error(this.exception.toIproovException())
+            IProovState.Error(this.exception.toIProovException())
         }
     }
 }
 
-fun UIState.toIproovUIState(): IproovUIState {
+fun UIState.toIProovUIState(): IProovUIState {
     return when (this) {
-        UIState.NotStarted -> IproovUIState.NotStarted
-        UIState.Started -> IproovUIState.Started
-        UIState.Ended -> IproovUIState.Ended
+        UIState.NotStarted -> IProovUIState.NotStarted
+        UIState.Started -> IProovUIState.Started
+        UIState.Ended -> IProovUIState.Ended
     }
 }
 
 
-private fun com.iproov.sdk.api.exception.IProovException.toIproovException(): IProovException {
+private fun com.iproov.sdk.api.exception.IProovException.toIProovException(): IProovException {
     return when (this) {
         is com.iproov.sdk.api.exception.CaptureAlreadyActiveException -> CaptureAlreadyActiveException(this.reason)
         is com.iproov.sdk.api.exception.NetworkException -> NetworkException(this.reason, this.message)
@@ -74,13 +68,9 @@ private fun com.iproov.sdk.api.exception.IProovException.toIproovException(): IP
         is com.iproov.sdk.api.exception.CameraException -> CameraException(this.reason, this.message)
         is com.iproov.sdk.api.exception.MultiWindowUnsupportedException -> MultiWindowUnsupportedException(this.reason)
         is com.iproov.sdk.api.exception.UnsupportedDeviceException -> UnsupportedDeviceException(this.reason)
+        is com.iproov.sdk.api.exception.UnsupportedOSVersionException -> UnsupportedOSVersionException(this.reason)
+        is com.iproov.sdk.api.exception.UnsupportedSDKVersionException -> UnsupportedSDKVersionException(this.reason)
         is com.iproov.sdk.api.exception.InvalidOptionsException -> InvalidOptionsException(this.reason)
         else -> UnexpectedErrorException(this.reason, this.message)
     }
-}
-
-private fun bitmapToByteArray(bitmap: Bitmap): ByteArray {
-    val stream = ByteArrayOutputStream()
-    bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream)
-    return stream.toByteArray()
 }

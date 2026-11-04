@@ -17,6 +17,12 @@ class ServerException(title: String, message: String?) : IProovException(title, 
 
 class UnexpectedErrorException(title: String, message: String?) : IProovException(title, message)
 
+class UnsupportedDeviceException(title: String) : IProovException(title)
+
+class UnsupportedOSVersionException(title: String) : IProovException(title)
+
+class UnsupportedSDKVersionException(title: String) : IProovException(title)
+
 // iOS only
 class UserTimeoutException(title: String) : IProovException(title)
 
@@ -24,7 +30,5 @@ class UserTimeoutException(title: String) : IProovException(title)
 class MultiWindowUnsupportedException(title: String) : IProovException(title)
 
 class CameraException(title: String, message: String?) : IProovException(title, message)
-
-class UnsupportedDeviceException(title: String) : IProovException(title)
 
 class InvalidOptionsException(title: String) : IProovException(title)

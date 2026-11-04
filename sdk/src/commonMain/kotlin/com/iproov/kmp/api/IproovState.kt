@@ -3,41 +3,30 @@
 package com.iproov.kmp.api
 
 
-data class SuccessResult(
-    val frame: ByteArray?,
-)
-
 data class FailureReason(
     val feedbackCode: String,
     val description: String
 )
 
-data class FailureResult(
-    val reasons: List<FailureReason>,
-    val frame: ByteArray?,
-)
-
 enum class Canceler { USER, INTEGRATION }
 
-sealed class IproovState(val isFinal: Boolean) {
-    object Starting : IproovState(false)
-    object Connecting : IproovState(false)
-    object Connected : IproovState(false)
-    data class Processing(val progress: Double, val message: String) : IproovState(false) {
+sealed class IProovState(val isFinal: Boolean) {
+    object Starting : IProovState(false)
+    object Connecting : IProovState(false)
+    object Connected : IProovState(false)
+    data class Processing(val progress: Double, val message: String) : IProovState(false) {
         override fun toString(): String =
             "${super.toString()} $progress $message"
     }
 
-    data class Success(val successResult: SuccessResult) : IproovState(true) {
-        override fun toString(): String = super.toString()
+    object Success : IProovState(true)
+
+    data class Failure(val reasons: List<FailureReason>) : IProovState(true) {
+        override fun toString(): String = "${super.toString()} $reasons"
     }
 
-    data class Failure(val failureResult: FailureResult) : IproovState(true) {
-        override fun toString(): String = "${super.toString()} $failureResult"
-    }
-
-    data class Canceled(val canceler: Canceler) : IproovState(true)
-    data class Error(val exception: IProovException) : IproovState(true) {
+    data class Canceled(val canceler: Canceler) : IProovState(true)
+    data class Error(val exception: IProovException) : IProovState(true) {
         override fun toString(): String = "${super.toString()} $exception"
     }
 
@@ -46,10 +35,10 @@ sealed class IproovState(val isFinal: Boolean) {
     }
 }
 
-sealed class IproovUIState {
-    object NotStarted : IproovUIState()
-    object Started : IproovUIState()
-    object Ended : IproovUIState()
+sealed class IProovUIState {
+    object NotStarted : IProovUIState()
+    object Started : IProovUIState()
+    object Ended : IProovUIState()
 
     override fun toString(): String {
         return "IProovUIState [${this::class.simpleName}]"
