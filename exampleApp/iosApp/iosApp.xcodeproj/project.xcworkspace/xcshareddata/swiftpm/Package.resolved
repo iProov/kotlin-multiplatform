@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/iProov/ios-spm",
       "state" : {
-        "revision" : "dcafa09911c0d18ff331efdaccf644e53d838202",
-        "version" : "14.0.0"
+        "revision" : "054f6739f33ed583295af3a00370bed36cd4c5f7",
+        "version" : "14.1.0"
       }
     }
   ],

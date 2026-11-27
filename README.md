@@ -1,6 +1,6 @@
 ![iProov: Flexible authentication for identity assurance](https://github.com/iProov/kotlin-multiplatform/blob/main/banner.jpg)
 
-# iProov Face Kotlin Multiplatform SDK v3.0.0
+# iProov Face Kotlin Multiplatform SDK v3.1.0
 
 ## Introduction
 
@@ -35,8 +35,8 @@ iProov also supports [iOS](https://github.com/iproov/ios), [Android](https://git
 
 This version wraps the following native SDKs:
 
-- iOS SDK [14.0.0](https://github.com/iProov/ios/releases/tag/14.0.0)
-- Android SDK [12.0.0](https://github.com/iProov/android/releases/tag/v12.0.0)
+- iOS SDK [14.1.0](https://github.com/iProov/ios/releases/tag/14.1.0)
+- Android SDK [12.1.1](https://github.com/iProov/android/releases/tag/v12.1.1)
 
 ### Firebase Cloud Firestore
 
@@ -89,7 +89,7 @@ You can obtain API credentials by registering on [iPortal](https://portal.iproov
 
     ```kotlin
     commonMain.dependencies {
-        implementation("com.iproov.kmp:sdk:3.0.0")
+        implementation("com.iproov.kmp:sdk:3.1.0")
     }
     ```
 
@@ -107,7 +107,7 @@ The iOS app also needs the native iOS SDK, at the same version this SDK wraps:
    https://github.com/iProov/ios-spm
    ```
 
-3. Set the _version_ to `14.0.0`. **Always use the iOS SDK version listed in [Requirements](#requirements)**.
+3. Set the _version_ to `14.1.0`. **Always use the iOS SDK version listed in [Requirements](#requirements)**.
 
 4. Click _Add Package_ to add the iProov SDK to your Xcode project and then click again to confirm.
 
